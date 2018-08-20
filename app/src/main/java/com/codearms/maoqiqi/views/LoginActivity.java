@@ -5,10 +5,13 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * 登录页面
@@ -29,7 +32,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         setContentView(R.layout.activity_login);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Login");
+        toolbar.setTitle(getString(R.string.login));
         setSupportActionBar(toolbar);
 
         etEmail = findViewById(R.id.et_email);
@@ -40,6 +43,22 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
         etEmail.addTextChangedListener(textWatcher);
         etPassword.addTextChangedListener(textWatcher);
+        etPassword.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_NEXT || actionId == EditorInfo.IME_NULL) {
+                    String email = etEmail.getText().toString();
+                    String password = etPassword.getText().toString();
+                    if (email.equals("") || password.equals("")) {
+                        Toast.makeText(LoginActivity.this, getString(R.string.login_error), Toast.LENGTH_SHORT).show();
+                    } else {
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    }
+                    return true;
+                }
+                return false;
+            }
+        });
 
         btnLogin.setOnClickListener(this);
         tvForgetPassword.setOnClickListener(this);

@@ -10,4 +10,6 @@
     <string name="login">Login</string>
     <string name="forget_password">忘记密码?</string>
     <string name="new_user_register">新用户注册</string>
+    <string name="login_error">Please input email and password.</string>
+    <string name="register">Register</string>
 </resources>

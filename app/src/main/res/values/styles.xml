@@ -28,4 +28,10 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
+    <!--android.support.design.widget.TextInputLayout 提示字体样式-->
+    <style name="text_input_layout" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_accent</item>
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+
 </resources>
