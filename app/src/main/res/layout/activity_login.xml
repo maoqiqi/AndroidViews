@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/sixteen">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:drawablePadding="@dimen/four"
+            android:drawableStart="@drawable/ic_email"
+            android:drawableTint="@color/bg_input_tint"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/eight"
+            android:paddingTop="@dimen/eight"
+            android:singleLine="true"
+            android:textColor="@color/text_color_primary"
+            android:textColorHighlight="@color/text_color_highlight"
+            android:textColorHint="@drawable/text_color_hint"
+            android:textCursorDrawable="@drawable/text_cursor_drawable"
+            android:textSelectHandle="@drawable/text_select_handle_center"
+            android:textSelectHandleLeft="@drawable/text_select_handle_left"
+            android:textSelectHandleRight="@drawable/text_select_handle_right"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sixteen"
+            android:background="@drawable/bg_input"
+            android:backgroundTint="@color/bg_input_tint"
+            android:drawablePadding="@dimen/four"
+            android:drawableStart="@drawable/ic_password"
+            android:drawableTint="@color/bg_input_tint"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/eight"
+            android:paddingTop="@dimen/eight"
+            android:singleLine="true"
+            android:textColor="@color/text_color_primary"
+            android:textColorHighlight="@color/text_color_highlight"
+            android:textColorHint="@drawable/text_color_hint"
+            android:textCursorDrawable="@drawable/text_cursor_drawable"
+            android:textSelectHandle="@drawable/text_select_handle_center"
+            android:textSelectHandleLeft="@drawable/text_select_handle_left"
+            android:textSelectHandleRight="@drawable/text_select_handle_right"
+            android:textSize="@dimen/text_size_normal" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_btn"
+            android:backgroundTint="@color/bg_btn_tint"
+            android:enabled="false"
+            android:minHeight="40dp"
+            android:text="@string/login"
+            android:textColor="@color/text_color_btn"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sixteen">
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_password"
+                android:textColor="@drawable/text_color_login"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_new_user_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/new_user_register"
+                android:textColor="@drawable/text_color_login"
+                android:textSize="@dimen/text_size_small" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

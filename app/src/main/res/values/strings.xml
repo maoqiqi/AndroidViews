@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidViews</string>
+    <string name="splash_description">splash</string>
+    <string name="jump">跳过 %1$d</string>
+    <string name="logo_description">logo</string>
+    <string name="description_1">干货集中营</string>
+    <string name="description_2">每天都有新发现</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="new_user_register">新用户注册</string>
+</resources>
