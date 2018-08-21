@@ -32,7 +32,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         setContentView(R.layout.activity_login);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(getString(R.string.login));
+        toolbar.setTitle(R.string.login);
         setSupportActionBar(toolbar);
 
         etEmail = findViewById(R.id.et_email);

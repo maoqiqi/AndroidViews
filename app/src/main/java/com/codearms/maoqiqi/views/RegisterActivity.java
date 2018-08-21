@@ -1,5 +1,6 @@
 package com.codearms.maoqiqi.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.widget.Toolbar;
@@ -25,7 +26,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         setContentView(R.layout.activity_register);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(getString(R.string.register));
+        toolbar.setTitle(R.string.register);
         setSupportActionBar(toolbar);
 
         tieEmail = findViewById(R.id.tie_email);
@@ -40,7 +41,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-
+        startActivity(new Intent(this, InformationActivity.class));
     }
 
     private TextWatcher textWatcher = new TextWatcher() {

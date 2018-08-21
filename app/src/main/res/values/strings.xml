@@ -12,4 +12,17 @@
     <string name="new_user_register">新用户注册</string>
     <string name="login_error">Please input email and password.</string>
     <string name="register">Register</string>
+    <string name="information">Information</string>
+    <string name="nick_name_label">昵称</string>
+    <string name="nick_name">我以为</string>
+    <string name="birthday_label">生日</string>
+    <string name="birthday">1999-09-09</string>
+    <string name="sex_label">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="hobbies_label">爱好</string>
+    <string name="qin">琴</string>
+    <string name="qi">棋</string>
+    <string name="shu">书</string>
+    <string name="hua">画</string>
 </resources>
