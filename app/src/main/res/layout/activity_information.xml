@@ -10,214 +10,402 @@
 
     <include layout="@layout/layout_title" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/thirty_two"
-            android:layout_marginTop="@dimen/thirty_two">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/civ_profile"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_profile"
-                android:src="@drawable/ic_profile"
-                app:civ_border_color="@color/white"
-                app:civ_border_width="2dp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|bottom"
-                android:layout_marginBottom="@dimen/four"
-                android:layout_marginEnd="@dimen/four"
-                android:src="@drawable/ic_camera" />
-        </FrameLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@drawable/bg_information_item" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_information_item"
-            android:gravity="center_vertical"
-            android:minHeight="48dp"
-            android:orientation="horizontal"
-            android:padding="@dimen/eight">
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nick_name_label"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
+            <FrameLayout
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/thirty_two"
+                android:layout_marginTop="@dimen/thirty_two">
 
-            <EditText
-                android:id="@+id/et_nick_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/sixteen"
-                android:layout_marginStart="@dimen/sixteen"
-                android:background="@null"
-                android:hint="@string/nick_name_label"
-                android:inputType="text"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="@string/nick_name"
-                android:textColor="@color/text_color_primary"
-                android:textColorHighlight="@color/text_color_highlight"
-                android:textColorHint="@drawable/text_color_hint"
-                android:textCursorDrawable="@drawable/text_cursor_drawable"
-                android:textSelectHandle="@drawable/text_select_handle_center"
-                android:textSelectHandleLeft="@drawable/text_select_handle_left"
-                android:textSelectHandleRight="@drawable/text_select_handle_right"
-                android:textSize="@dimen/text_size_normal" />
-        </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_profile"
+                    android:src="@drawable/ic_profile"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
 
-        <LinearLayout
-            android:id="@+id/ll_birthday"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_information_item"
-            android:clickable="true"
-            android:gravity="center_vertical"
-            android:minHeight="48dp"
-            android:orientation="horizontal"
-            android:padding="@dimen/eight">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/birthday_label"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-
-            <TextView
-                android:id="@+id/tv_birthday"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/sixteen"
-                android:drawableEnd="@drawable/ic_arrow_right"
-                android:drawableTint="@color/text_color_gray"
-                android:text="@string/birthday"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_information_item"
-            android:gravity="center_vertical"
-            android:minHeight="48dp"
-            android:orientation="horizontal"
-            android:padding="@dimen/eight">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sex_label"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-
-            <RadioGroup
-                android:id="@+id/radio_group"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/twelve"
-                android:layout_marginStart="@dimen/twelve"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/rb_male"
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@color/button_tint"
-                    android:checked="true"
-                    android:text="@string/male"
-                    android:textColor="@drawable/text_color_button"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="@dimen/four"
+                    android:layout_marginEnd="@dimen/four"
+                    android:contentDescription="@string/camera_description"
+                    android:src="@drawable/ic_camera" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_information_item"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nick_name_label"
+                    android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/text_size_normal" />
 
-                <RadioButton
-                    android:id="@+id/rb_female"
+                <EditText
+                    android:id="@+id/et_nick_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:layout_marginStart="@dimen/sixteen"
+                    android:background="@null"
+                    android:hint="@string/nick_name_label"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/nick_name"
+                    android:textColor="@color/text_color_primary"
+                    android:textColorHighlight="@color/text_color_highlight"
+                    android:textColorHint="@drawable/text_color_hint"
+                    android:textCursorDrawable="@drawable/text_cursor_drawable"
+                    android:textSelectHandle="@drawable/text_select_handle_center"
+                    android:textSelectHandleLeft="@drawable/text_select_handle_left"
+                    android:textSelectHandleRight="@drawable/text_select_handle_right"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_information_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthday_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/sixteen"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_gray"
+                    android:text="@string/birthday"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_information_item"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:layout_marginStart="@dimen/sixteen"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/button_tint"
+                        android:checked="true"
+                        android:text="@string/male"
+                        android:textColor="@drawable/text_color_button"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/sixteen"
+                        android:buttonTint="@color/button_tint"
+                        android:text="@string/female"
+                        android:textColor="@drawable/text_color_button"
+                        android:textSize="@dimen/text_size_normal" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_information_item"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobbies_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <CheckBox
+                    android:id="@+id/cb_qin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:layout_marginStart="@dimen/sixteen"
                     android:buttonTint="@color/button_tint"
-                    android:text="@string/female"
+                    android:checked="true"
+                    android:text="@string/qin"
                     android:textColor="@drawable/text_color_button"
                     android:textSize="@dimen/text_size_normal" />
-            </RadioGroup>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_information_item"
-            android:gravity="center_vertical"
-            android:minHeight="48dp"
-            android:orientation="horizontal"
-            android:padding="@dimen/eight">
+                <CheckBox
+                    android:id="@+id/cb_qi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:buttonTint="@color/button_tint"
+                    android:checked="true"
+                    android:text="@string/qi"
+                    android:textColor="@drawable/text_color_button"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <CheckBox
+                    android:id="@+id/cb_shu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:buttonTint="@color/button_tint"
+                    android:text="@string/shu"
+                    android:textColor="@drawable/text_color_button"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <CheckBox
+                    android:id="@+id/cb_hua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:buttonTint="@color/button_tint"
+                    android:text="@string/hua"
+                    android:textColor="@drawable/text_color_button"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/sixteen"
+                android:background="@color/text_color_gray" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/hobbies_label"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
+                android:background="@color/bg_item_pressed"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:padding="@dimen/eight"
+                android:text="@string/occupational"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
 
-            <CheckBox
-                android:id="@+id/cb_qin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/twelve"
-                android:layout_marginStart="@dimen/twelve"
-                android:buttonTint="@color/button_tint"
-                android:checked="true"
-                android:text="@string/qin"
-                android:textColor="@drawable/text_color_button"
-                android:textSize="@dimen/text_size_normal" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/text_color_gray" />
 
-            <CheckBox
-                android:id="@+id/cb_qi"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/ll_occupational"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/sixteen"
-                android:buttonTint="@color/button_tint"
-                android:checked="true"
-                android:text="@string/qi"
-                android:textColor="@drawable/text_color_button"
-                android:textSize="@dimen/text_size_normal" />
+                android:background="@drawable/bg_information_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
 
-            <CheckBox
-                android:id="@+id/cb_shu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/sixteen"
-                android:buttonTint="@color/button_tint"
-                android:text="@string/shu"
-                android:textColor="@drawable/text_color_button"
-                android:textSize="@dimen/text_size_normal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/occupational_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
 
-            <CheckBox
-                android:id="@+id/cb_hua"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sixteen"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
+                    android:text="@string/occupational_android"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_school"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/sixteen"
-                android:buttonTint="@color/button_tint"
-                android:text="@string/hua"
-                android:textColor="@drawable/text_color_button"
-                android:textSize="@dimen/text_size_normal" />
+                android:background="@drawable/bg_information_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sixteen"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
+                    android:text="@string/school"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_specialty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_information_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/specialty_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sixteen"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
+                    android:text="@string/specialty"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_information_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sixteen"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
+                    android:text="@string/address"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_information_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_page_label"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/sixteen"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
+                    android:text="@string/home_page"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_finish"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sixteen"
+                android:background="@drawable/bg_btn"
+                android:backgroundTint="@color/bg_btn_tint"
+                android:minHeight="40dp"
+                android:text="@string/finish"
+                android:textColor="@color/text_color_btn"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

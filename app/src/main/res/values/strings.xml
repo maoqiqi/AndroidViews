@@ -14,9 +14,10 @@
     <string name="register">Register</string>
     <string name="information">Information</string>
     <string name="nick_name_label">昵称</string>
-    <string name="nick_name">我以为</string>
+    <string name="nick_name">AndroidViews</string>
+    <string name="camera_description">camera</string>
     <string name="birthday_label">生日</string>
-    <string name="birthday">1999-09-09</string>
+    <string name="birthday">1999–09–09</string>
     <string name="sex_label">性别</string>
     <string name="male">男</string>
     <string name="female">女</string>
@@ -25,4 +26,16 @@
     <string name="qi">棋</string>
     <string name="shu">书</string>
     <string name="hua">画</string>
+    <string name="occupational">职业信息</string>
+    <string name="occupational_label">职业</string>
+    <string name="occupational_android">Android开发工程师</string>
+    <string name="school_label">学校</string>
+    <string name="school">湖北工程学院</string>
+    <string name="specialty_label">专业</string>
+    <string name="specialty">计算机科学与技术</string>
+    <string name="address_label">地址</string>
+    <string name="address">湖北省恩施土家族苗族自治州建始县</string>
+    <string name="home_page_label">主页</string>
+    <string name="home_page">https://github.com/maoqiqi</string>
+    <string name="finish">完成</string>
 </resources>
