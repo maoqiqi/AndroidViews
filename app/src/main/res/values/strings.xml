@@ -38,4 +38,21 @@
     <string name="home_page_label">主页</string>
     <string name="home_page">https://github.com/maoqiqi</string>
     <string name="finish">完成</string>
+    <string name="project_description">project</string>
+    <string name="git">https://github.com/maoqiqi/AndroidViews</string>
+    <string name="scan_code_description">scan_code</string>
+    <string name="project_introduction">项目介绍</string>
+    <string name="update_description">更新说明</string>
+    <string name="scan_code">扫码下载</string>
+    <string name="problem_feedback">问题反馈</string>
+    <string name="about">关于</string>
+    <string name="setting">设置</string>
+    <string name="mode_night">夜间</string>
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="mine">Mine</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="classify">分类</string>
+    <string name="search">搜索</string>
 </resources>

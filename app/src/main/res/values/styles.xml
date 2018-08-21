@@ -28,10 +28,23 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
+    <!--状态栏透明-->
+    <style name="AppTheme.Transparent">
+        <!--透明-->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <!--半透明-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+
     <!--android.support.design.widget.TextInputLayout 提示字体样式-->
     <style name="text_input_layout" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/color_accent</item>
         <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+
+    <!--android.support.design.widget.NavigationView-->
+    <style name="navigation_view" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
     </style>
 
 </resources>

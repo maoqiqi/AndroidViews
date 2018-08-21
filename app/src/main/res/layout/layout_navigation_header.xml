@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_navigation_header"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/sixteen">
+
+        <ImageView
+            android:id="@+id/iv_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:contentDescription="@string/project_description"
+            app:srcCompat="@drawable/ic_project" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/git"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_smaller" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_marginRight="@dimen/sixteen"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/scan_code_description"
+        android:src="@drawable/ic_scan_code" />
+</RelativeLayout>
