@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,8 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.codearms.maoqiqi.views.fragment.MineFragment;
 import com.codearms.maoqiqi.views.fragment.HomeFragment;
+import com.codearms.maoqiqi.views.fragment.MineFragment;
 import com.codearms.maoqiqi.views.fragment.NewsFragment;
 import com.codearms.maoqiqi.views.utils.StatusBarUtils;
 
@@ -55,9 +56,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         navigationHeader.findViewById(R.id.iv_scan_code).setOnClickListener(this);
         navigationHeader.findViewById(R.id.iv_project).setOnClickListener(this);
 
+        // 定义drawerArrowDrawable
+        DrawerArrowDrawable drawerArrowDrawable = new DrawerArrowDrawable(this);
+        drawerArrowDrawable.setColor(ContextCompat.getColor(this, R.color.text_color_title));
+
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.drawer_open, R.string.drawer_close);
+        // 设置drawerArrowDrawable
+        toggle.setDrawerArrowDrawable(drawerArrowDrawable);
         toggle.syncState();
         drawerLayout.addDrawerListener(toggle);
 
