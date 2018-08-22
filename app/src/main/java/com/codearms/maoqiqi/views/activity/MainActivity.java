@@ -1,5 +1,6 @@
 package com.codearms.maoqiqi.views.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.nav_update_description:
                 return true;
             case R.id.nav_scan_code:
+                startActivity(new Intent(this, ScanCodeActivity.class));
                 return true;
             case R.id.nav_problem_feedback:
                 return true;
@@ -114,6 +116,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_scan_code:
+                startActivity(new Intent(this, ScanCodeActivity.class));
                 break;
             case R.id.iv_project:
                 break;

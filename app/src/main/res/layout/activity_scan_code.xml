@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.ScanCodeActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sixteen"
+            android:background="@drawable/bg_hint"
+            android:lineSpacingExtra="2dp"
+            android:padding="@dimen/sixteen"
+            android:text="@string/download_content"
+            android:textColor="@color/text_color_gray_dark"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:contentDescription="@string/code_description"
+            android:padding="@dimen/eight"
+            android:src="@drawable/ic_code" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:padding="@dimen/sixteen"
+            android:text="@string/star_content"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+</LinearLayout>
