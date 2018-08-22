@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 startActivity(new Intent(this, ScanCodeActivity.class));
                 break;
             case R.id.iv_project:
+                WebViewActivity.start(this, "", getString(R.string.git));
                 break;
             case R.id.tv_setting:
                 break;

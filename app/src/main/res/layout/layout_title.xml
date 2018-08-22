@@ -7,4 +7,5 @@
     android:background="@color/color_primary"
     app:contentInsetStartWithNavigation="0dp"
     app:navigationIcon="@drawable/ic_back"
+    app:popupTheme="@style/tool_bar_popup_theme"
     app:titleTextColor="@color/text_color_title" />

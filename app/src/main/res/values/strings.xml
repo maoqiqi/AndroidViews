@@ -60,4 +60,7 @@
     <string name="download_content">喜欢就推荐给你的小伙伴吧，扫描二维码直接下载，或者点击右上角分享链接地址。</string>
     <string name="code_description">code</string>
     <string name="star_content">喜欢的朋友请Star，欢迎一起学习讨论。你的支持将是我最大的动力与褒奖~ O(∩_∩)O ~</string>
+    <string name="loading">加载中…</string>
+    <string name="copy_url">复制链接</string>
+    <string name="open_url">打开链接</string>
 </resources>
