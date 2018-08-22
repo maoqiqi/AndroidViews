@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 startActivity(new Intent(this, ProblemFeedbackActivity.class));
                 return true;
             case R.id.nav_about:
+                startActivity(new Intent(this, AboutActivity.class));
                 return true;
         }
         return false;
