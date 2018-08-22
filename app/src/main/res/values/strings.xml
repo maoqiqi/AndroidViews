@@ -63,4 +63,16 @@
     <string name="loading">加载中…</string>
     <string name="copy_url">复制链接</string>
     <string name="open_url">打开链接</string>
+    <string name="introduction_title">本案例主要演示安卓常用控件的使用。</string>
+    <string name="introduction_1">1. SplashActivity(过渡页面)</string>
+    <string name="introduction_2">2. LoginActivity(登录页面)</string>
+    <string name="introduction_3">3. RegisterActivity(注册页面)</string>
+    <string name="introduction_4">4. InformationActivity(信息页面)</string>
+    <string name="introduction_5">5. MainActivity(主页)</string>
+    <string name="introduction_1_text">该页面演示了FrameLayout和LinearLayout布局、ImageView和TextView控件的基本使用；以及解决了安卓Handler内存泄漏和全屏Activity进入下一个非全屏Activity出现下移的情况。</string>
+    <string name="introduction_2_text">该页面演示了Toolbar、EditText、Button控件的基本使用以及安卓新特性Tint着色功能；演示了使用imeOptions属性设置Enter键的状态，在代码中设置响应事件。</string>
+    <string name="introduction_3_text">该页面演示了Android Material Design风格控件中的TextInputLayout、TextInputEditText的基本使用。</string>
+    <string name="introduction_4_text">该页面演示了RadioGroup、RadioButton、CheckBox控件的基本使用；第三方控件CircleImageView的使用。</string>
+    <string name="introduction_5_text">该页面演示了Android v4 包中的DrawerLayout抽屉控件、Android Material Design风格控件中的BottomNavigationView、NavigationView的基本使用；以及如何解决状态栏透明问题。</string>
+    <string name="introduction_read_me">这里只是简单列举一些内容，详见README，如果感兴趣可以下载项目亲自体验一下。</string>
 </resources>

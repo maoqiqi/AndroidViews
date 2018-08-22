@@ -26,6 +26,9 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ScanCodeActivity" />
         <activity android:name=".activity.WebViewActivity" />
+        <activity
+            android:name=".activity.ProjectIntroductionActivity"
+            android:theme="@style/AppTheme.Transparent" />
     </application>
 
 </manifest>

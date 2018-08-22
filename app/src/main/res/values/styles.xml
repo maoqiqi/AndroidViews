@@ -63,4 +63,10 @@
     <style name="tool_bar_popup_theme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:textColorPrimary">@color/color_primary</item>
     </style>
+
+    <!--项目描述标题栏展开样式-->
+    <style name="project_introduction_expanded_title_text_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/transparent</item>
+    </style>
 </resources>
