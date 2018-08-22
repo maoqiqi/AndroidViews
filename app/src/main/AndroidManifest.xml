@@ -29,6 +29,7 @@
         <activity
             android:name=".activity.ProjectIntroductionActivity"
             android:theme="@style/AppTheme.Transparent" />
+        <activity android:name=".activity.UpdateDescriptionActivity" />
     </application>
 
 </manifest>

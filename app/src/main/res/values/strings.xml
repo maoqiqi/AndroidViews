@@ -75,4 +75,24 @@
     <string name="introduction_4_text">该页面演示了RadioGroup、RadioButton、CheckBox控件的基本使用；第三方控件CircleImageView的使用。</string>
     <string name="introduction_5_text">该页面演示了Android v4 包中的DrawerLayout抽屉控件、Android Material Design风格控件中的BottomNavigationView、NavigationView的基本使用；以及如何解决状态栏透明问题。</string>
     <string name="introduction_read_me">这里只是简单列举一些内容，详见README，如果感兴趣可以下载项目亲自体验一下。</string>
+    <string-array name="versions">
+        <item>版本 V1.0.0</item>
+        <item>版本 V1.0.0</item>
+    </string-array>
+    <string-array name="version_1_0_0_logs">
+        <item>Complete UpdateDescriptionActivity.</item>
+        <item>Complete ProjectIntroductionActivity.</item>
+        <item>Complete WebViewActivity and project jump to GitHub.</item>
+        <item>Upload apk.</item>
+        <item>Complete ScanCodeActivity.</item>
+        <item>Subcontracting management for all Activity.</item>
+        <item>Use StatusBarView to adapt the status bar.</item>
+        <item>Add Banner to HomeFragment.</item>
+        <item>Set the color of ActionBarDrawerToggle's DrawerArrowDrawable and modify height of status bar.</item>
+        <item>Complete MainActivity.</item>
+        <item>In InformationActivity, occupational information is added.</item>
+        <item>Complete InformationActivity.</item>
+        <item>LoginActivity EditText add imeOptions attribute to monitor keyboard Enter key, complete RegisterActivity.</item>
+        <item>Build project、complete SplashActivity and LoginActivity.</item>
+    </string-array>
 </resources>
