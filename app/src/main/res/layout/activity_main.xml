@@ -13,9 +13,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <View
+        <com.codearms.maoqiqi.views.view.StatusBarView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/status_bar_height"
+            android:layout_height="wrap_content"
             android:background="@color/color_primary_dark" />
 
         <include layout="@layout/layout_title" />
