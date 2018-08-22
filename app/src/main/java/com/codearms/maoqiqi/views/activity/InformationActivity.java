@@ -1,4 +1,4 @@
-package com.codearms.maoqiqi.views;
+package com.codearms.maoqiqi.views.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+
+import com.codearms.maoqiqi.views.BaseActivity;
+import com.codearms.maoqiqi.views.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

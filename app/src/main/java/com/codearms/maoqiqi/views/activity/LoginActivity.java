@@ -1,4 +1,4 @@
-package com.codearms.maoqiqi.views;
+package com.codearms.maoqiqi.views.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.codearms.maoqiqi.views.BaseActivity;
+import com.codearms.maoqiqi.views.R;
 
 /**
  * 登录页面

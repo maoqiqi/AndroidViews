@@ -1,4 +1,4 @@
-package com.codearms.maoqiqi.views;
+package com.codearms.maoqiqi.views.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+
+import com.codearms.maoqiqi.views.BaseActivity;
+import com.codearms.maoqiqi.views.R;
 
 /**
  * 注册页面

@@ -1,4 +1,4 @@
-package com.codearms.maoqiqi.views;
+package com.codearms.maoqiqi.views.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.codearms.maoqiqi.views.R;
 
 import java.lang.ref.WeakReference;
 

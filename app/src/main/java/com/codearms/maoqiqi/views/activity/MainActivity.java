@@ -1,4 +1,4 @@
-package com.codearms.maoqiqi.views;
+package com.codearms.maoqiqi.views.activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.codearms.maoqiqi.views.R;
 import com.codearms.maoqiqi.views.fragment.HomeFragment;
 import com.codearms.maoqiqi.views.fragment.MineFragment;
 import com.codearms.maoqiqi.views.fragment.NewsFragment;
