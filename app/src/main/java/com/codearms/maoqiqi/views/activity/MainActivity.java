@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 startActivity(new Intent(this, ScanCodeActivity.class));
                 return true;
             case R.id.nav_problem_feedback:
+                startActivity(new Intent(this, ProblemFeedbackActivity.class));
                 return true;
             case R.id.nav_about:
                 return true;

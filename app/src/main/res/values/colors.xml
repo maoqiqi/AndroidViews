@@ -21,4 +21,5 @@
 
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="color_line">#EBEBEB</color>
 </resources>

@@ -80,6 +80,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Complete ProblemFeedbackActivity.</item>
         <item>Complete UpdateDescriptionActivity.</item>
         <item>Complete ProjectIntroductionActivity.</item>
         <item>Complete WebViewActivity and project jump to GitHub.</item>
@@ -95,4 +96,9 @@
         <item>LoginActivity EditText add imeOptions attribute to monitor keyboard Enter key, complete RegisterActivity.</item>
         <item>Build project、complete SplashActivity and LoginActivity.</item>
     </string-array>
+    <string name="problem_feedback_content">您好，很希望得到您的意见，您可以在GitHub的Issues处说明问题原因，也可以通过以下方式联系我 ~ </string>
+    <string name="issues">Issues</string>
+    <string name="faq_name">常见问题</string>
+    <string name="contact_me">联系我</string>
+    <string name="qq">QQ</string>
 </resources>

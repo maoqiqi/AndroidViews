@@ -30,6 +30,7 @@
             android:name=".activity.ProjectIntroductionActivity"
             android:theme="@style/AppTheme.Transparent" />
         <activity android:name=".activity.UpdateDescriptionActivity" />
+        <activity android:name=".activity.ProblemFeedbackActivity" />
     </application>
 
 </manifest>
