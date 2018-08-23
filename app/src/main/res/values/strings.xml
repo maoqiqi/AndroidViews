@@ -81,6 +81,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Analysis and display of news JSON data.</item>
         <item>Complete SettingActivity.</item>
         <item>Complete DonateActivity.</item>
         <item>Modify the item background color of ProblemFeedbackActivity and AboutActivity, and modify AboutActivity content.</item>
@@ -122,4 +123,6 @@
     <string name="launcher_page_random_title">随机出现</string>
     <string name="launcher_page_random_content_1">偶尔来个惊喜就行</string>
     <string name="launcher_page_random_content_2">我每次都要幸临，没毛病</string>
+    <string name="category_description">category</string>
+    <string name="news_description">news</string>
 </resources>

@@ -3,15 +3,23 @@ package com.codearms.maoqiqi.views.fragment;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.codearms.maoqiqi.views.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * NewsPage
@@ -20,7 +28,14 @@ import com.codearms.maoqiqi.views.R;
  */
 public class NewsFragment extends Fragment {
 
+    private String[] titles = {"推荐", "热点", "社会", "娱乐", "情感", "故事", "小说", "星座", "科技", "财经", "体育", "军事", "教育", "历史", "搞笑", "奇闻", "游戏", "时尚", "养生", "美食", "旅行"};
+
     private View rootView;
+    private TabLayout tabLayout;
+    private ImageView ivNewsCategory;
+    private ViewPager viewPager;
+
+    private SectionsPagerAdapter adapter;
 
     public static NewsFragment newInstance() {
         return new NewsFragment();
@@ -39,6 +54,25 @@ public class NewsFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
+        tabLayout = rootView.findViewById(R.id.tab_layout);
+        ivNewsCategory = rootView.findViewById(R.id.iv_news_category);
+        viewPager = rootView.findViewById(R.id.view_pager);
+
+        adapter = new SectionsPagerAdapter(getChildFragmentManager());
+        for (String title : titles) {
+            adapter.addFragment(title, getFragment(title));
+        }
+
+        // 设置ViewPager
+        viewPager.setAdapter(adapter);
+        viewPager.setOffscreenPageLimit(1);
+        viewPager.setCurrentItem(0);
+
+        tabLayout.setupWithViewPager(viewPager);
+    }
+
+    private Fragment getFragment(String title) {
+        return NewsListFragment.newInstance(title);
     }
 
     @Override
@@ -54,5 +88,37 @@ public class NewsFragment extends Fragment {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private final class SectionsPagerAdapter extends FragmentPagerAdapter {
+
+        private List<Fragment> fragments;
+        private List<String> fragmentTitles;
+
+        SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+            fragments = new ArrayList<>();
+            fragmentTitles = new ArrayList<>();
+        }
+
+        void addFragment(String title, Fragment fragment) {
+            fragmentTitles.add(title);
+            fragments.add(fragment);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return fragments.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return fragments.size();
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return fragmentTitles.get(position);
+        }
     }
 }
