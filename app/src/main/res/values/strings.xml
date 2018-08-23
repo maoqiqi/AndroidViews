@@ -80,6 +80,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Unified color resource and divide line height.</item>
         <item>Complete AboutActivity.</item>
         <item>Complete ProblemFeedbackActivity.</item>
         <item>Complete UpdateDescriptionActivity.</item>

@@ -22,7 +22,7 @@
             android:lineSpacingExtra="2dp"
             android:padding="@dimen/sixteen"
             android:text="@string/problem_feedback_content"
-            android:textColor="@color/text_color_gray_dark"
+            android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_small" />
 
         <LinearLayout
@@ -44,7 +44,7 @@
                 android:paddingRight="@dimen/sixteen"
                 android:paddingTop="@dimen/eight"
                 android:text="@string/issues"
-                android:textColor="@color/text_color_gray_dark"
+                android:textColor="@color/text_color_gray"
                 android:textSize="@dimen/text_size_small" />
 
             <TextView
@@ -63,7 +63,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/line_height"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/sixteen"
                 android:background="@color/color_line" />
 
             <TextView
@@ -105,7 +105,7 @@
                 android:paddingRight="@dimen/sixteen"
                 android:paddingTop="@dimen/eight"
                 android:text="@string/contact_me"
-                android:textColor="@color/text_color_primary"
+                android:textColor="@color/text_color_gray"
                 android:textSize="@dimen/text_size_small" />
 
             <TextView
@@ -124,7 +124,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/line_height"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/sixteen"
                 android:background="@color/color_line" />
 
             <TextView

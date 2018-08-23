@@ -20,8 +20,8 @@
     <View
         android:id="@+id/view_line_title"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/text_color_gray" />
+        android:layout_height="@dimen/line_height"
+        android:background="@color/color_line" />
 
     <TextView
         android:id="@+id/tv_content"
@@ -40,6 +40,6 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/text_color_gray" />
+        android:layout_height="@dimen/line_height"
+        android:background="@color/color_line" />
 </LinearLayout>

@@ -30,7 +30,7 @@
             android:layout_width="220dp"
             android:layout_height="220dp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/thirty_two"
             android:background="@color/white"
             android:contentDescription="@string/code_description"
             android:padding="@dimen/eight"
@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/thirty_two"
             android:gravity="center_horizontal"
             android:lineSpacingExtra="2dp"
             android:padding="@dimen/sixteen"
