@@ -21,7 +21,6 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
     private TextView tvCheckUpdate;
     private TextView tvUpdateDescription;
     private TextView tvStar;
-    private TextView tvDonate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +36,6 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
         tvCheckUpdate = findViewById(R.id.tv_check_update);
         tvUpdateDescription = findViewById(R.id.tv_update_description);
         tvStar = findViewById(R.id.tv_star);
-        tvDonate = findViewById(R.id.tv_donate);
 
         try {
             String versionName = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
@@ -50,7 +48,6 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
         tvCheckUpdate.setOnClickListener(this);
         tvUpdateDescription.setOnClickListener(this);
         tvStar.setOnClickListener(this);
-        tvDonate.setOnClickListener(this);
     }
 
     @Override

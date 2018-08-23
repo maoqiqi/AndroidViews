@@ -29,5 +29,10 @@
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_nav_about"
             android:title="@string/about" />
+
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_nav_donate"
+            android:title="@string/donate" />
     </group>
 </menu>

@@ -46,6 +46,7 @@
     <string name="scan_code">扫码下载</string>
     <string name="problem_feedback">问题反馈</string>
     <string name="about">关于</string>
+    <string name="donate">捐赠</string>
     <string name="setting">设置</string>
     <string name="mode_night">夜间</string>
     <string name="home">Home</string>
@@ -80,6 +81,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Complete DonateActivity.</item>
         <item>Modify the item background color of ProblemFeedbackActivity and AboutActivity, and modify AboutActivity content.</item>
         <item>Unified color resource and divide line height.</item>
         <item>Complete AboutActivity.</item>
@@ -108,5 +110,7 @@
     <string name="function_introduction">功能介绍</string>
     <string name="check_update">检查更新</string>
     <string name="give_a_star">给个Star吧</string>
-    <string name="donate">捐赠开发者</string>
+    <string name="alipay">支付宝</string>
+    <string name="wxpay">微信</string>
+    <string name="pay_description">pay</string>
 </resources>

@@ -112,6 +112,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.nav_about:
                 startActivity(new Intent(this, AboutActivity.class));
                 return true;
+            case R.id.nav_donate:
+                startActivity(new Intent(this, DonateActivity.class));
+                break;
         }
         return false;
     }

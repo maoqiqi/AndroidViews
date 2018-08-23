@@ -116,25 +116,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/line_height"
-                android:layout_marginStart="@dimen/sixteen"
-                android:background="@color/color_line" />
-
-            <TextView
-                android:id="@+id/tv_donate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_navigation_item"
-                android:gravity="center_vertical"
-                android:minHeight="48dp"
-                android:paddingLeft="@dimen/sixteen"
-                android:paddingRight="@dimen/sixteen"
-                android:text="@string/donate"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_height"
                 android:background="@color/color_line" />
         </LinearLayout>
 
