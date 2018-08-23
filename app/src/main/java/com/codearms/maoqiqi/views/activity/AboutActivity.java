@@ -17,7 +17,7 @@ import com.codearms.maoqiqi.views.R;
 public class AboutActivity extends BaseActivity implements View.OnClickListener {
 
     private TextView tvVersionName;
-    private TextView tvProjectIntroduction;
+    private TextView tvFunctionIntroduction;
     private TextView tvCheckUpdate;
     private TextView tvUpdateDescription;
     private TextView tvStar;
@@ -33,7 +33,7 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
         setSupportActionBar(toolbar);
 
         tvVersionName = findViewById(R.id.tv_version_name);
-        tvProjectIntroduction = findViewById(R.id.tv_project_introduction);
+        tvFunctionIntroduction = findViewById(R.id.tv_function_introduction);
         tvCheckUpdate = findViewById(R.id.tv_check_update);
         tvUpdateDescription = findViewById(R.id.tv_update_description);
         tvStar = findViewById(R.id.tv_star);
@@ -46,7 +46,7 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
             e.printStackTrace();
         }
 
-        tvProjectIntroduction.setOnClickListener(this);
+        tvFunctionIntroduction.setOnClickListener(this);
         tvCheckUpdate.setOnClickListener(this);
         tvUpdateDescription.setOnClickListener(this);
         tvStar.setOnClickListener(this);
