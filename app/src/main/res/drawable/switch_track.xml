@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <size android:height="24dp" />
+            <solid android:color="@color/switch_track_checked" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <!-- 高度30此处设置宽度无效-->
+            <size android:height="24dp" />
+            <solid android:color="@color/switch_track_normal" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+</selector>

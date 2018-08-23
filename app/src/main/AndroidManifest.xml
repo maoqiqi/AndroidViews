@@ -33,6 +33,7 @@
         <activity android:name=".activity.ProblemFeedbackActivity" />
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.DonateActivity" />
+        <activity android:name=".activity.SettingActivity" />
     </application>
 
 </manifest>

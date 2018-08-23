@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_system_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/sixteen">
+
+            <TextView
+                android:id="@+id/tv_system_animation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/system_animation_title"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_system_animation_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_system_animation_title"
+                android:layout_marginTop="@dimen/four"
+                android:text="@string/system_animation_content"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_system_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/color_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_launcher_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_launcher_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/launcher_page_title"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_launcher_page_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_launcher_page_title"
+                android:layout_marginTop="@dimen/four"
+                android:text="@string/launcher_page_content_2"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_launcher_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/color_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_launcher_page_random"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_launcher_page_random_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/launcher_page_random_title"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_launcher_page_random_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_launcher_page_random_title"
+                android:layout_marginTop="@dimen/four"
+                android:text="@string/launcher_page_random_content_2"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_launcher_page_random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:clickable="false"
+                app:thumbTint="@color/switch_thumb_tint"
+                app:trackTint="@color/switch_track_tint" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/color_line" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,11 +1,11 @@
 package com.codearms.maoqiqi.views.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 
+import com.codearms.maoqiqi.views.BaseActivity;
 import com.codearms.maoqiqi.views.R;
 
 /**
@@ -13,7 +13,7 @@ import com.codearms.maoqiqi.views.R;
  * Author: fengqi.mao.march@gmail.com
  * Date: 2018/8/23 15:50
  */
-public class DonateActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+public class DonateActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
 
     private RadioGroup radioGroup;
     private ImageView ivPay;

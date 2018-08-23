@@ -18,6 +18,14 @@
     <color name="text_color_gray_pressed">#808080</color>
     <color name="text_color_gray_dark">#666666</color>
 
+    <color name="switch_thumb_checked">#ffffff</color>
+    <color name="switch_thumb_normal">#ffffff</color>
+    <color name="switch_track_checked">#4CAF50</color>
+    <color name="switch_track_normal">#A9A9A9</color>
+
+    <color name="switch_thumb_checked_tint">#4CAF50</color>
+    <color name="switch_track_checked_tint">#b0d3b0</color>
+
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFF</color>
     <color name="color_line">#dddddd</color>
