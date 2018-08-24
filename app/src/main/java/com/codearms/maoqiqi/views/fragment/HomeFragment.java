@@ -24,6 +24,7 @@ import com.youth.banner.Banner;
 import com.youth.banner.loader.ImageLoader;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -36,16 +37,20 @@ public class HomeFragment extends Fragment {
 
     // Banner 图
     public static final Integer[] BANNER_RES_IDS = {R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3, R.drawable.banner_4, R.drawable.banner_5};
+    public static final int[] ICONS = {
+            R.drawable.ic_home_food, R.drawable.ic_home_movie, R.drawable.ic_home_hotel, R.drawable.ic_home_entertainment,
+            R.drawable.ic_home_take_out, R.drawable.ic_home_parent_child, R.drawable.ic_home_beauty, R.drawable.ic_home_spot,
+            R.drawable.ic_home_shopping, R.drawable.ic_home_market, R.drawable.ic_home_park, R.drawable.ic_home_bar,
+            R.drawable.ic_home_life, R.drawable.ic_home_haircut, R.drawable.ic_home_body_building, R.drawable.ic_home_pedicure,
+            R.drawable.ic_home_clothes, R.drawable.ic_home_marry, R.drawable.ic_home_furniture, R.drawable.ic_home_all_categories
+    };
 
     private View rootView;
     private Banner banner;
     private ViewPager viewPager;
     private LinearLayout container;
 
-    private int total = 24;
     private int pageSize = 10;
-    private int pageCount;
-
     private List<View> views;
 
     private int currentItem = 0;
@@ -77,28 +82,22 @@ public class HomeFragment extends Fragment {
         viewPager = rootView.findViewById(R.id.view_pager);
         container = rootView.findViewById(R.id.container);
 
+        if (getActivity() == null) return;
+
         List<Integer> imageUrls = new ArrayList<>();
         Collections.addAll(imageUrls, BANNER_RES_IDS);
         banner.setImages(imageUrls).setImageLoader(new MyImageLoader()).start();
 
-        // 向上取整
-        pageCount = (int) Math.ceil(total * 1.0 / pageSize);
+        List<String> data = Arrays.asList(getActivity().getResources().getStringArray(R.array.data));
+        int size = data.size();
         views = new ArrayList<>();
-        for (int i = 0; i < pageCount; i++) {
+        for (int i = 0; i < size; i += pageSize) {
             GridView gridView = (GridView) View.inflate(getActivity(), R.layout.layout_grid_view, null);
-            List<String> data = new ArrayList<>();
-            int end = (i + 1) * pageSize;
-            if (end > total) end = total;
-            for (int j = i * pageSize; j < end; j++) {
-                data.add("数据 " + j);
-            }
-            gridView.setAdapter(new GridViewAdapter(getActivity(), data));
+            int end = (i + pageSize) > size ? size : i + pageSize;
+            List<String> list = new ArrayList<>(data.subList(i, end));
+            gridView.setAdapter(new GridViewAdapter(getActivity(), list, i));
             views.add(gridView);
-
-            View view = View.inflate(getActivity(), R.layout.layout_point, null);
-            if (i == currentItem)
-                view.findViewById(R.id.point).setBackgroundResource(R.drawable.ic_selected);
-            container.addView(view);
+            container.addView(getImageView());
         }
         viewPager.setAdapter(new ViewPagerAdapter(views));
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -110,9 +109,11 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void onPageSelected(int position) {
-                container.getChildAt(lastPosition).findViewById(R.id.point).setBackgroundResource(R.drawable.ic_unselected);
+                // 取消圆点选中
+                container.getChildAt(lastPosition).setBackgroundResource(R.drawable.ic_unselected);
+                // 圆点选中
+                container.getChildAt(position).setBackgroundResource(R.drawable.ic_selected);
                 lastPosition = position;
-                container.getChildAt(position).findViewById(R.id.point).setBackgroundResource(R.drawable.ic_selected);
             }
 
             @Override
@@ -121,6 +122,17 @@ public class HomeFragment extends Fragment {
             }
         });
         viewPager.setCurrentItem(currentItem);
+        container.getChildAt(currentItem).setBackgroundResource(R.drawable.ic_selected);
+    }
+
+    private ImageView getImageView() {
+        int size = getResources().getDimensionPixelSize(R.dimen.four);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(size, size);
+        params.setMargins(size, size, size, size);
+        ImageView imageView = new ImageView(getActivity());
+        imageView.setLayoutParams(params);
+        imageView.setBackgroundResource(R.drawable.ic_unselected);
+        return imageView;
     }
 
     @Override
@@ -150,10 +162,12 @@ public class HomeFragment extends Fragment {
 
         private Context context;
         private List<String> data;
+        private int index;
 
-        GridViewAdapter(Context context, List<String> data) {
+        GridViewAdapter(Context context, List<String> data, int index) {
             this.context = context;
             this.data = data;
+            this.index = index;
         }
 
         @Override
@@ -183,6 +197,7 @@ public class HomeFragment extends Fragment {
                 holder = (ViewHolder) convertView.getTag();
             }
             holder.tv.setText(data.get(position));
+            holder.tv.setCompoundDrawablesWithIntrinsicBounds(0, ICONS[index + position], 0, 0);
             return convertView;
         }
     }

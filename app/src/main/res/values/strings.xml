@@ -103,6 +103,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>ViewPager+GridView of Home page add real data and icons.</item>
         <item>Home to add ViewPager nesting GridView to achieve paging scrolling.</item>
         <item>Update settings interface, demonstrate CheckedTextView, SwitchCompat, ToggleButton to achieve the setting effect.</item>
         <item>Complete SchoolActivity.</item>
@@ -152,6 +153,28 @@
     <string name="launcher_page_random_title">随机出现</string>
     <string name="launcher_page_random_content_1">偶尔来个惊喜就行</string>
     <string name="launcher_page_random_content_2">我每次都要幸临，没毛病</string>
+    <string-array name="data">
+        <item>美食</item>
+        <item>电影</item>
+        <item>酒店</item>
+        <item>休闲娱乐</item>
+        <item>外卖</item>
+        <item>亲子</item>
+        <item>丽人</item>
+        <item>景点</item>
+        <item>购物</item>
+        <item>商场</item>
+        <item>游乐园</item>
+        <item>酒吧</item>
+        <item>生活服务</item>
+        <item>理发</item>
+        <item>健身</item>
+        <item>足疗</item>
+        <item>服饰</item>
+        <item>结婚</item>
+        <item>家具</item>
+        <item>全部分类</item>
+    </string-array>
     <string name="category_description">category</string>
     <string name="news_description">news</string>
 </resources>
