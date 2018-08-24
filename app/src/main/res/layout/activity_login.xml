@@ -82,6 +82,8 @@
             android:textSize="@dimen/text_size_normal"
             android:textStyle="bold" />
 
+        <!--style="?android:buttonBarButtonStyle":去除Button默认阴影效果-->
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

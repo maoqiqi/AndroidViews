@@ -103,6 +103,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Home to add ViewPager nesting GridView to achieve paging scrolling.</item>
         <item>Update settings interface, demonstrate CheckedTextView, SwitchCompat, ToggleButton to achieve the setting effect.</item>
         <item>Complete SchoolActivity.</item>
         <item>The home page implement Fragment cache, and news list is lazy loaded.</item>
