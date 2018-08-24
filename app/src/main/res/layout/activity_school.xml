@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.SchoolActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/sixteen">
+
+        <AutoCompleteTextView
+            android:id="@+id/act_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:backgroundTint="@color/bg_input_tint"
+            android:completionThreshold="1"
+            android:drawablePadding="@dimen/four"
+            android:drawableStart="@drawable/ic_menu_search"
+            android:drawableTint="@color/bg_input_tint"
+            android:dropDownSelector="@drawable/bg_navigation_item"
+            android:dropDownVerticalOffset="1dp"
+            android:hint="@string/school_hint"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/eight"
+            android:paddingTop="@dimen/eight"
+            android:singleLine="true"
+            android:textColor="@color/text_color_primary"
+            android:textColorHighlight="@color/text_color_highlight"
+            android:textColorHint="@drawable/text_color_hint"
+            android:textCursorDrawable="@drawable/text_cursor_drawable"
+            android:textSelectHandle="@drawable/text_select_handle_center"
+            android:textSelectHandleLeft="@drawable/text_select_handle_left"
+            android:textSelectHandleRight="@drawable/text_select_handle_right"
+            android:textSize="@dimen/text_size_normal" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multi_act_specialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sixteen"
+            android:background="@drawable/bg_input"
+            android:backgroundTint="@color/bg_input_tint"
+            android:completionThreshold="1"
+            android:drawablePadding="@dimen/four"
+            android:drawableStart="@drawable/ic_menu_search"
+            android:drawableTint="@color/bg_input_tint"
+            android:dropDownSelector="@drawable/bg_navigation_item"
+            android:dropDownVerticalOffset="1dp"
+            android:hint="@string/specialty_hint"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/eight"
+            android:paddingTop="@dimen/eight"
+            android:singleLine="true"
+            android:textColor="@color/text_color_primary"
+            android:textColorHighlight="@color/text_color_highlight"
+            android:textColorHint="@drawable/text_color_hint"
+            android:textCursorDrawable="@drawable/text_cursor_drawable"
+            android:textSelectHandle="@drawable/text_select_handle_center"
+            android:textSelectHandleLeft="@drawable/text_select_handle_left"
+            android:textSelectHandleRight="@drawable/text_select_handle_right"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+</LinearLayout>

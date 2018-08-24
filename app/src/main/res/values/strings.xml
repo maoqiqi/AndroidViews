@@ -38,6 +38,28 @@
     <string name="home_page_label">主页</string>
     <string name="home_page">https://github.com/maoqiqi</string>
     <string name="finish">完成</string>
+    <string name="school_hint">搜索学校</string>
+    <string-array name="schools">
+        <item>湖北工程学院</item>
+        <item>湖北经济学院</item>
+        <item>湖北理工学院</item>
+        <item>湖北文理学院</item>
+        <item>湖北科技学院</item>
+        <item>湖北民族学院</item>
+    </string-array>
+    <string name="specialty_hint">搜索专业</string>
+    <string-array name="specialties">
+        <item>土木工程专业</item>
+        <item>经济学专业</item>
+        <item>建筑学专业</item>
+        <item>计算机科学与技术专业</item>
+        <item>英语专业</item>
+        <item>城乡规划专业</item>
+        <item>化学专业</item>
+        <item>法学专业</item>
+        <item>汉语言文学专业</item>
+        <item>高分子材料与工程专业</item>
+    </string-array>
     <string name="project_description">project</string>
     <string name="git">https://github.com/maoqiqi/AndroidViews</string>
     <string name="scan_code_description">scan_code</string>
@@ -81,6 +103,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Complete SchoolActivity.</item>
         <item>The home page implement Fragment cache, and news list is lazy loaded.</item>
         <item>Analysis and display of news JSON data.</item>
         <item>Complete SettingActivity.</item>
