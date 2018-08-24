@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -40,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     private HomeFragment homeFragment;
     private NewsFragment newsFragment;
     private MineFragment mineFragment;
+
+    // 上次切换的Fragment
+    private Fragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,17 +89,17 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.nav_home:
                 if (getSupportActionBar() != null) getSupportActionBar().setTitle("Home");
                 if (homeFragment == null) homeFragment = HomeFragment.newInstance();
-                getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, homeFragment).commit();
+                switchFragment(fragment, homeFragment);
                 return true;
             case R.id.nav_news:
                 if (getSupportActionBar() != null) getSupportActionBar().setTitle("News");
                 if (newsFragment == null) newsFragment = NewsFragment.newInstance();
-                getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, newsFragment).commit();
+                switchFragment(fragment, newsFragment);
                 return true;
             case R.id.nav_mine:
                 if (getSupportActionBar() != null) getSupportActionBar().setTitle("Mine");
                 if (mineFragment == null) mineFragment = MineFragment.newInstance();
-                getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, mineFragment).commit();
+                switchFragment(fragment, mineFragment);
                 return true;
 
             case R.id.nav_project_introduction:
@@ -117,6 +122,25 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
         }
         return false;
+    }
+
+    private void switchFragment(Fragment from, Fragment to) {
+        if (to != null && from != to) {//from != to才切换
+            fragment = to;
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+
+            // from隐藏
+            if (from != null)
+                ft.hide(from);
+
+            if (!to.isAdded()) {
+                // 没有被添加,添加to
+                ft.add(R.id.fl_content, to).commit();
+            } else {
+                // 已经被添加,显示to
+                ft.show(to).commit();
+            }
+        }
     }
 
     @Override

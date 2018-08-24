@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.codearms.maoqiqi.views.LazyLoadFragment;
 import com.codearms.maoqiqi.views.R;
 import com.codearms.maoqiqi.views.bean.NewsListBean;
 import com.google.gson.Gson;
@@ -31,7 +31,7 @@ import java.util.List;
  * Author: fengqi.mao.march@gmail.com
  * Date: 2018/8/23 21:08
  */
-public class NewsListFragment extends Fragment {
+public class NewsListFragment extends LazyLoadFragment {
 
     private View rootView;
     private RecyclerView recyclerView;
@@ -59,8 +59,8 @@ public class NewsListFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public void loadData() {
+        super.loadData();
         recyclerView = rootView.findViewById(R.id.recycler_view);
 
         if (getActivity() == null) return;
