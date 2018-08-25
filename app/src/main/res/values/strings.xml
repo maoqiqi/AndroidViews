@@ -103,6 +103,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Setting interface to add Switch view.</item>
         <item>ViewPager+GridView of Home page add real data and icons.</item>
         <item>Home to add ViewPager nesting GridView to achieve paging scrolling.</item>
         <item>Update settings interface, demonstrate CheckedTextView, SwitchCompat, ToggleButton to achieve the setting effect.</item>

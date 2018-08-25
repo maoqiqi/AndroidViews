@@ -10,244 +10,287 @@
 
     <include layout="@layout/layout_title" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_height"
-            android:layout_marginTop="@dimen/twenty_four"
-            android:background="@color/color_line" />
-
-        <CheckedTextView
-            android:id="@+id/remember_password_1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:checkMark="?android:attr/listChoiceIndicatorSingle"
-            android:checkMarkTint="@color/check_mark_tint"
-            android:checked="true"
-            android:clickable="true"
-            android:drawablePadding="@dimen/eight"
-            android:drawableStart="@drawable/ic_password"
-            android:drawableTint="@color/text_color_primary"
-            android:gravity="center_vertical"
-            android:minHeight="48dp"
-            android:paddingEnd="@dimen/twelve"
-            android:paddingStart="@dimen/twelve"
-            android:text="@string/remember_password"
-            android:textColor="@color/text_color_primary"
-            android:textSize="@dimen/text_size_normal" />
+            android:orientation="vertical">
 
-        <CheckedTextView
-            android:id="@+id/remember_password_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:checkMarkTint="@color/check_mark_tint"
-            android:checked="true"
-            android:clickable="true"
-            android:drawablePadding="@dimen/eight"
-            android:drawableStart="@drawable/ic_password"
-            android:drawableTint="@color/text_color_primary"
-            android:gravity="center_vertical"
-            android:minHeight="48dp"
-            android:paddingEnd="@dimen/twelve"
-            android:paddingStart="@dimen/twelve"
-            android:text="@string/remember_password"
-            android:textColor="@color/text_color_primary"
-            android:textSize="@dimen/text_size_normal" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginTop="@dimen/twenty_four"
+                android:background="@color/color_line" />
 
-        <android.support.v7.widget.SwitchCompat
-            android:id="@+id/remember_password_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:checked="true"
-            android:drawablePadding="@dimen/eight"
-            android:drawableStart="@drawable/ic_password"
-            android:drawableTint="@color/text_color_primary"
-            android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/twelve"
-            android:text="@string/remember_password"
-            android:textColor="@color/text_color_primary"
-            android:textOff="@string/off"
-            android:textOn="@string/on"
-            android:textSize="@dimen/text_size_normal"
-            android:thumb="@drawable/switch_thumb"
-            app:showText="true"
-            app:switchTextAppearance="@style/switch_text_appearance"
-            app:track="@drawable/switch_track" />
-
-        <android.support.v7.widget.SwitchCompat
-            android:id="@+id/remember_password_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:checked="true"
-            android:drawablePadding="@dimen/eight"
-            android:drawableStart="@drawable/ic_password"
-            android:drawableTint="@color/text_color_primary"
-            android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/twelve"
-            android:text="@string/remember_password"
-            android:textColor="@color/text_color_primary"
-            android:textSize="@dimen/text_size_normal"
-            app:thumbTint="@color/switch_thumb_tint"
-            app:trackTint="@color/switch_track_tint" />
-
-        <RelativeLayout
-            android:id="@+id/remember_password_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:clickable="true"
-            android:minHeight="48dp"
-            android:paddingEnd="@dimen/twelve"
-            android:paddingStart="@dimen/twelve">
-
-            <TextView
-                android:layout_width="wrap_content"
+            <CheckedTextView
+                android:id="@+id/remember_password_1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                android:background="@drawable/bg_setting_item"
+                android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                android:checkMarkTint="@color/check_mark_tint"
+                android:checked="true"
                 android:drawablePadding="@dimen/eight"
                 android:drawableStart="@drawable/ic_password"
                 android:drawableTint="@color/text_color_primary"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/twelve"
+                android:paddingStart="@dimen/twelve"
                 android:text="@string/remember_password"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/text_size_normal" />
 
-            <ToggleButton
-                android:id="@+id/toggle_button"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/bg_toggle"
-                android:backgroundTint="@color/bg_toggle_tint"
+            <CheckedTextView
+                android:id="@+id/remember_password_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:checkMarkTint="@color/check_mark_tint"
                 android:checked="true"
-                android:clickable="false"
-                android:textOff="@null"
-                android:textOn="@null" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_height"
-            android:layout_marginTop="@dimen/twenty_four"
-            android:background="@color/color_line" />
-
-        <RelativeLayout
-            android:id="@+id/rl_system_animation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:clickable="true"
-            android:padding="@dimen/sixteen">
-
-            <TextView
-                android:id="@+id/tv_system_animation_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/system_animation_title"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableTint="@color/text_color_primary"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/twelve"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/remember_password"
                 android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_small" />
+                android:textSize="@dimen/text_size_normal" />
 
-            <TextView
-                android:id="@+id/tv_system_animation_content"
-                android:layout_width="wrap_content"
+            <Switch
+                android:id="@+id/remember_password_3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_system_animation_title"
-                android:layout_marginTop="@dimen/four"
-                android:text="@string/system_animation_content"
-                android:textColor="@color/text_color_gray"
-                android:textSize="@dimen/text_size_smaller" />
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableTint="@color/text_color_primary"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:showText="true"
+                android:switchTextAppearance="@style/switch_text_appearance"
+                android:text="@string/remember_password"
+                android:textColor="@color/text_color_primary"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:textSize="@dimen/text_size_normal"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+
+            <Switch
+                android:id="@+id/remember_password_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableTint="@color/text_color_primary"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/remember_password"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal"
+                android:thumbTint="@color/switch_thumb_tint"
+                android:trackTint="@color/switch_track_tint" />
 
             <android.support.v7.widget.SwitchCompat
-                android:id="@+id/sc_system_animation"
-                android:layout_width="wrap_content"
+                android:id="@+id/remember_password_5"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:background="@color/transparent"
-                android:clickable="false" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_launcher_page"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:clickable="true"
-            android:padding="16dp">
-
-            <TextView
-                android:id="@+id/tv_launcher_page_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/launcher_page_title"
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableTint="@color/text_color_primary"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/remember_password"
                 android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_small" />
-
-            <TextView
-                android:id="@+id/tv_launcher_page_content"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_launcher_page_title"
-                android:layout_marginTop="@dimen/four"
-                android:text="@string/launcher_page_content_2"
-                android:textColor="@color/text_color_gray"
-                android:textSize="@dimen/text_size_smaller" />
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:textSize="@dimen/text_size_normal"
+                android:thumb="@drawable/switch_thumb"
+                app:showText="true"
+                app:switchTextAppearance="@style/switch_text_appearance"
+                app:track="@drawable/switch_track" />
 
             <android.support.v7.widget.SwitchCompat
-                android:id="@+id/sc_launcher_page"
-                android:layout_width="wrap_content"
+                android:id="@+id/remember_password_6"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:background="@color/transparent"
-                android:clickable="false" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_launcher_page_random"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:clickable="true"
-            android:padding="16dp">
-
-            <TextView
-                android:id="@+id/tv_launcher_page_random_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/launcher_page_random_title"
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableTint="@color/text_color_primary"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/remember_password"
                 android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_small" />
+                android:textSize="@dimen/text_size_normal"
+                app:thumbTint="@color/switch_thumb_tint"
+                app:trackTint="@color/switch_compat_track_tint" />
 
-            <TextView
-                android:id="@+id/tv_launcher_page_random_content"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_launcher_page_random_title"
-                android:layout_marginTop="@dimen/four"
-                android:text="@string/launcher_page_random_content_2"
-                android:textColor="@color/text_color_gray"
-                android:textSize="@dimen/text_size_smaller" />
+            <!--Switch的android:trackTint="@color/switch_track_tint"-->
+            <!--SwitchCompat的app:trackTint="@color/switch_compat_track_tint"-->
+            <!--Switch会对颜色进行30%处理,而SwitchCompat显示填的的颜色-->
 
-            <android.support.v7.widget.SwitchCompat
-                android:id="@+id/sc_launcher_page_random"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/remember_password_7"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:background="@color/transparent"
-                android:clickable="false" />
-        </RelativeLayout>
-    </LinearLayout>
+                android:background="@drawable/bg_setting_item"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/twelve"
+                android:paddingStart="@dimen/twelve">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/eight"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawableTint="@color/text_color_primary"
+                    android:text="@string/remember_password"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_toggle"
+                    android:backgroundTint="@color/bg_toggle_tint"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:textOff="@null"
+                    android:textOn="@null" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginTop="@dimen/twenty_four"
+                android:background="@color/color_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_system_animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:padding="@dimen/sixteen">
+
+                <TextView
+                    android:id="@+id/tv_system_animation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/system_animation_title"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_system_animation_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_system_animation_title"
+                    android:layout_marginTop="@dimen/four"
+                    android:text="@string/system_animation_content"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_smaller" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_system_animation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_launcher_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_launcher_page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/launcher_page_title"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_launcher_page_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_launcher_page_title"
+                    android:layout_marginTop="@dimen/four"
+                    android:text="@string/launcher_page_content_2"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_smaller" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_launcher_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_launcher_page_random"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_launcher_page_random_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/launcher_page_random_title"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_launcher_page_random_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_launcher_page_random_title"
+                    android:layout_marginTop="@dimen/four"
+                    android:text="@string/launcher_page_random_content_2"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_smaller" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_launcher_page_random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:clickable="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

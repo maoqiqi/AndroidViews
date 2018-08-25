@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.CheckedTextView;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -22,9 +23,11 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
 
     private CheckedTextView rememberPassword1;
     private CheckedTextView rememberPassword2;
-    private SwitchCompat rememberPassword3;
-    private SwitchCompat rememberPassword4;
-    private RelativeLayout rememberPassword5;
+    private Switch rememberPassword3;
+    private Switch rememberPassword4;
+    private SwitchCompat rememberPassword5;
+    private SwitchCompat rememberPassword6;
+    private RelativeLayout rememberPassword7;
     private ToggleButton toggleButton;
 
     private RelativeLayout rlSystemAnimation;
@@ -54,6 +57,8 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         rememberPassword3 = findViewById(R.id.remember_password_3);
         rememberPassword4 = findViewById(R.id.remember_password_4);
         rememberPassword5 = findViewById(R.id.remember_password_5);
+        rememberPassword6 = findViewById(R.id.remember_password_6);
+        rememberPassword7 = findViewById(R.id.remember_password_7);
         toggleButton = findViewById(R.id.toggle_button);
 
         rlSystemAnimation = findViewById(R.id.rl_system_animation);
@@ -71,7 +76,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
 
         rememberPassword1.setOnClickListener(this);
         rememberPassword2.setOnClickListener(this);
-        rememberPassword5.setOnClickListener(this);
+        rememberPassword7.setOnClickListener(this);
 
         rlSystemAnimation.setOnClickListener(this);
         rlLauncherPage.setOnClickListener(this);
@@ -93,7 +98,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
             case R.id.remember_password_2:
                 rememberPassword2.toggle();
                 break;
-            case R.id.remember_password_5:
+            case R.id.remember_password_7:
                 toggleButton.toggle();
                 break;
             case R.id.rl_system_animation:
