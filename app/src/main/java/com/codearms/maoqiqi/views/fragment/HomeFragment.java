@@ -1,12 +1,18 @@
 package com.codearms.maoqiqi.views.fragment;
 
 import android.content.Context;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,13 +25,20 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codearms.maoqiqi.views.R;
+import com.codearms.maoqiqi.views.bean.HomeListBean;
+import com.codearms.maoqiqi.views.utils.AssetsUtils;
+import com.codearms.maoqiqi.views.utils.UrlMatch;
+import com.google.gson.Gson;
 import com.youth.banner.Banner;
 import com.youth.banner.loader.ImageLoader;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -49,6 +62,7 @@ public class HomeFragment extends Fragment {
     private Banner banner;
     private ViewPager viewPager;
     private LinearLayout container;
+    private RecyclerView recyclerView;
 
     private int pageSize = 10;
     private List<View> views;
@@ -81,6 +95,7 @@ public class HomeFragment extends Fragment {
         banner = rootView.findViewById(R.id.banner);
         viewPager = rootView.findViewById(R.id.view_pager);
         container = rootView.findViewById(R.id.container);
+        recyclerView = rootView.findViewById(R.id.recycler_view);
 
         if (getActivity() == null) return;
 
@@ -123,6 +138,15 @@ public class HomeFragment extends Fragment {
         });
         viewPager.setCurrentItem(currentItem);
         container.getChildAt(currentItem).setBackgroundResource(R.drawable.ic_selected);
+
+        String json = AssetsUtils.getJson(getActivity(), "gank.json");
+        HomeListBean homeListBean = new Gson().fromJson(json, HomeListBean.class);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setHasFixedSize(false);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.setAdapter(new RecyclerViewAdapter(getActivity(), homeListBean.getResultList()));
     }
 
     private ImageView getImageView() {
@@ -235,6 +259,169 @@ public class HomeFragment extends Fragment {
         @Override
         public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
             container.removeView((View) object);
+        }
+    }
+
+    private final class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewViewHolder> {
+
+        private Context context;
+        private List<HomeListBean.ItemBean> data;
+
+        RecyclerViewAdapter(Context context, List<HomeListBean.ItemBean> data) {
+            this.context = context;
+            this.data = data;
+        }
+
+        @NonNull
+        @Override
+        public RecyclerViewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            View itemView = LayoutInflater.from(context).inflate(R.layout.item_home_list, parent, false);
+            return new RecyclerViewViewHolder(itemView);
+        }
+
+        @Override
+        public void onBindViewHolder(@NonNull RecyclerViewViewHolder holder, int position) {
+            HomeListBean.ItemBean itemBean = data.get(position);
+            if (itemBean.getType().equals("福利")) {
+                holder.ivWelfare.setVisibility(View.VISIBLE);
+                holder.llInfo.setVisibility(View.GONE);
+                setImage(holder.ivWelfare, itemBean.getUrl());
+            } else {
+                holder.ivWelfare.setVisibility(View.GONE);
+                holder.llInfo.setVisibility(View.VISIBLE);
+                holder.tvDes.setText(itemBean.getDesc());
+                if (itemBean.getImages() != null && itemBean.getImages().size() > 0
+                        && !TextUtils.isEmpty(itemBean.getImages().get(0))) {
+                    holder.ivImage.setVisibility(View.VISIBLE);
+                    setImage(holder.ivImage, itemBean.getImages().get(0));
+                } else {
+                    holder.ivImage.setVisibility(View.GONE);
+                }
+            }
+
+            setTag(holder.tvTag, itemBean.getType(), itemBean.getUrl());
+
+            String name = itemBean.getWho() == null ? "佚名" : itemBean.getWho();
+            holder.tvTime.setText(name + " " + getTranslateTime(itemBean.getPublishedAt()));
+
+            holder.cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+        }
+
+        @Override
+        public int getItemCount() {
+            return data == null ? 0 : data.size();
+        }
+
+        private void setImage(ImageView imageView, String imageUrl) {
+            Glide.with(context).load(imageUrl).into(imageView);
+        }
+
+        private void setTag(TextView tvTag, String type, String url) {
+            if (type.equals("福利")) {
+                tvTag.setVisibility(View.GONE);
+                return;
+            }
+            String prefix = type + " · ";
+
+            String key = UrlMatch.processUrl(url);
+            GradientDrawable drawable = (GradientDrawable) tvTag.getBackground();
+            if (UrlMatch.URL_2_CONTENT.containsKey(key)) {
+                drawable.setColor(UrlMatch.URL_2_COLOR.get(key));
+                tvTag.setText(prefix + UrlMatch.URL_2_CONTENT.get(key));
+            } else {
+                if (type.equals("休息视频")) {
+                    drawable.setColor(UrlMatch.VIDEO_COLOR);
+                    tvTag.setText(prefix + UrlMatch.VIDEO_CONTENT);
+                } else {
+                    // gitHub 的要特殊处理
+                    if (url.contains(UrlMatch.GITHUB_PREFIX)) {
+                        drawable.setColor(UrlMatch.GITHUB_COLOR);
+                        tvTag.setText(prefix + UrlMatch.GITHUB_CONTENT);
+                    } else {
+                        drawable.setColor(UrlMatch.OTHER_BLOG_COLOR);
+                        tvTag.setText(prefix + UrlMatch.OTHER_BLOG_CONTENT);
+                    }
+                }
+            }
+            tvTag.setVisibility(View.VISIBLE);
+        }
+
+        /**
+         * 如果在1分钟之内发布的显示"刚刚" 如果在1个小时之内发布的显示"XX分钟之前" 如果在1天之内发布的显示"XX小时之前"
+         * 如果在今年的1天之外的只显示“月-日”,例如“05-03” 如果不是今年的显示“年-月-日”,例如“2014-03-11”
+         */
+        private String getTranslateTime(String time) {
+            long timeMilliseconds = 0;
+            SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+            // 在主页面中设置当天时间
+            Date nowTime = new Date();
+            String currDate = sdf1.format(nowTime);
+            long currentMilliseconds = nowTime.getTime();// 当前日期的毫秒值
+            Date date = null;
+            try {
+                // 将给定的字符串中的日期提取出来
+                date = sdf1.parse(time);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return time;
+            }
+            if (date != null) {
+                timeMilliseconds = date.getTime();
+            }
+
+            long timeDifferent = currentMilliseconds - timeMilliseconds;
+
+
+            if (timeDifferent < 60000) {// 一分钟之内
+                return "刚刚";
+            }
+            if (timeDifferent < 3600000) {// 一小时之内
+                long longMinute = timeDifferent / 60000;
+                int minute = (int) (longMinute % 100);
+                return minute + "分钟之前";
+            }
+            long l = 24 * 60 * 60 * 1000; // 每天的毫秒数
+            if (timeDifferent < l) {// 小于一天
+                long longHour = timeDifferent / 3600000;
+                int hour = (int) (longHour % 100);
+                return hour + "小时之前";
+            }
+            if (timeDifferent >= l) {
+                String currYear = currDate.substring(0, 4);
+                String year = time.substring(0, 4);
+                if (!year.equals(currYear)) {
+                    return time.substring(0, 10);
+                }
+                return time.substring(5, 10);
+            }
+            return time;
+        }
+    }
+
+    private final class RecyclerViewViewHolder extends RecyclerView.ViewHolder {
+
+        CardView cardView;
+        ImageView ivWelfare;
+        LinearLayout llInfo;
+        TextView tvDes;
+        ImageView ivImage;
+        TextView tvTag;
+        TextView tvTime;
+
+        RecyclerViewViewHolder(View itemView) {
+            super(itemView);
+            cardView = itemView.findViewById(R.id.card_view);
+            ivWelfare = itemView.findViewById(R.id.iv_welfare);
+            llInfo = itemView.findViewById(R.id.ll_info);
+            tvDes = itemView.findViewById(R.id.tv_des);
+            ivImage = itemView.findViewById(R.id.iv_image);
+            tvTag = itemView.findViewById(R.id.tv_tag);
+            tvTime = itemView.findViewById(R.id.tv_time);
         }
     }
 }

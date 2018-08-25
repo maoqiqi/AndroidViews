@@ -18,12 +18,9 @@ import com.bumptech.glide.Glide;
 import com.codearms.maoqiqi.views.LazyLoadFragment;
 import com.codearms.maoqiqi.views.R;
 import com.codearms.maoqiqi.views.bean.NewsListBean;
+import com.codearms.maoqiqi.views.utils.AssetsUtils;
 import com.google.gson.Gson;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.List;
 
 /**
@@ -64,7 +61,7 @@ public class NewsListFragment extends LazyLoadFragment {
         recyclerView = rootView.findViewById(R.id.recycler_view);
 
         if (getActivity() == null) return;
-        String json = getJson(getActivity(), "news.json");
+        String json = AssetsUtils.getJson(getActivity(), "news.json");
         NewsListBean newsListBean = new Gson().fromJson(json, NewsListBean.class);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -72,21 +69,6 @@ public class NewsListFragment extends LazyLoadFragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setAdapter(new RecyclerViewAdapter(getActivity(), newsListBean.getNewsBeans()));
-    }
-
-    public static String getJson(Context context, String fileName) {
-        StringBuilder stringBuilder = new StringBuilder();
-        try {
-            InputStream is = context.getAssets().open(fileName);
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                stringBuilder.append(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return stringBuilder.toString();
     }
 
     private final class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {

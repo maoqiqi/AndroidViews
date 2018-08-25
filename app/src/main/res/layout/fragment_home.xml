@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <com.youth.banner.Banner
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="145dp"
-        android:background="@color/bg"
-        app:image_scale_type="fit_xy"
-        app:indicator_drawable_selected="@drawable/ic_banner_selected"
-        app:indicator_drawable_unselected="@drawable/ic_banner_unselected"
-        app:indicator_height="6dp"
-        app:indicator_margin="3dp"
-        app:indicator_width="6dp" />
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="140dp" />
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="@color/bg"
+            app:image_scale_type="fit_xy"
+            app:indicator_drawable_selected="@drawable/ic_banner_selected"
+            app:indicator_drawable_unselected="@drawable/ic_banner_unselected"
+            app:indicator_height="6dp"
+            app:indicator_margin="3dp"
+            app:indicator_width="6dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/twelve"
+            android:scrollbarThumbVertical="@color/color_primary" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
