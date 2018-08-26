@@ -35,6 +35,7 @@
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.DonateActivity" />
         <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.GridLayoutImageButtonActivity" />
     </application>
 
 </manifest>

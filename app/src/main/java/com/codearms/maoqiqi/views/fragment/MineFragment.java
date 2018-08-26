@@ -1,5 +1,6 @@
 package com.codearms.maoqiqi.views.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.codearms.maoqiqi.views.R;
+import com.codearms.maoqiqi.views.activity.GridLayoutImageButtonActivity;
 
 /**
  * MinePage
@@ -22,10 +24,9 @@ import com.codearms.maoqiqi.views.R;
 public class MineFragment extends Fragment implements View.OnClickListener {
 
     private View rootView;
-    public TextView tvImageButton;
+    public TextView tvGridLayoutImageButton;
     public TextView tvProgressBar;
     public TextView tvSpinner;
-    public TextView tvGridLayout;
     public TextView tvSlidingPaneLayout;
 
     public static MineFragment newInstance() {
@@ -45,22 +46,24 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
-        tvImageButton = rootView.findViewById(R.id.tv_image_button);
+        tvGridLayoutImageButton = rootView.findViewById(R.id.tv_grid_Layout_image_button);
         tvProgressBar = rootView.findViewById(R.id.tv_progress_bar);
         tvSpinner = rootView.findViewById(R.id.tv_spinner);
-        tvGridLayout = rootView.findViewById(R.id.tv_grid_layout);
         tvSlidingPaneLayout = rootView.findViewById(R.id.tv_sliding_pane_layout);
 
-        tvImageButton.setOnClickListener(this);
+        tvGridLayoutImageButton.setOnClickListener(this);
         tvProgressBar.setOnClickListener(this);
         tvSpinner.setOnClickListener(this);
-        tvGridLayout.setOnClickListener(this);
         tvSlidingPaneLayout.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-
+        switch (v.getId()) {
+            case R.id.tv_grid_Layout_image_button:
+                startActivity(new Intent(getActivity(), GridLayoutImageButtonActivity.class));
+                break;
+        }
     }
 
     @Override
