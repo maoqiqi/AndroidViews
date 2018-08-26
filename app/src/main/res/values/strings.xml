@@ -103,6 +103,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Complete the UI layout of mine page.</item>
         <item>Home to add RecyclerView to display gank data.</item>
         <item>Setting interface to add Switch view.</item>
         <item>ViewPager+GridView of Home page add real data and icons.</item>
@@ -181,4 +182,10 @@
     <string name="news_description">news</string>
     <string name="welfare_description">welfare</string>
     <string name="image_description">image</string>
+    <string name="phone">152******17</string>
+    <string name="image_button">ImageButton</string>
+    <string name="progress_bar">ProgressBar</string>
+    <string name="spinner">Spinner</string>
+    <string name="grid_layout">GridLayout</string>
+    <string name="sliding_pane_layout">SlidingPaneLayout</string>
 </resources>

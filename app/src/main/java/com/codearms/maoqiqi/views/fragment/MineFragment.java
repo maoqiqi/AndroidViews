@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.codearms.maoqiqi.views.R;
 
@@ -18,9 +19,14 @@ import com.codearms.maoqiqi.views.R;
  * Author: fengqi.mao.march@gmail.com
  * Date: 2018/8/21 21:03
  */
-public class MineFragment extends Fragment {
+public class MineFragment extends Fragment implements View.OnClickListener {
 
     private View rootView;
+    public TextView tvImageButton;
+    public TextView tvProgressBar;
+    public TextView tvSpinner;
+    public TextView tvGridLayout;
+    public TextView tvSlidingPaneLayout;
 
     public static MineFragment newInstance() {
         return new MineFragment();
@@ -39,6 +45,22 @@ public class MineFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
+        tvImageButton = rootView.findViewById(R.id.tv_image_button);
+        tvProgressBar = rootView.findViewById(R.id.tv_progress_bar);
+        tvSpinner = rootView.findViewById(R.id.tv_spinner);
+        tvGridLayout = rootView.findViewById(R.id.tv_grid_layout);
+        tvSlidingPaneLayout = rootView.findViewById(R.id.tv_sliding_pane_layout);
+
+        tvImageButton.setOnClickListener(this);
+        tvProgressBar.setOnClickListener(this);
+        tvSpinner.setOnClickListener(this);
+        tvGridLayout.setOnClickListener(this);
+        tvSlidingPaneLayout.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 
     @Override
