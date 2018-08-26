@@ -31,6 +31,13 @@
     <color name="switch_track_checked_tint">#b0d3b0</color>
     <color name="switch_track_normal_tint">#A9A9A9</color>
 
+    <color name="indeterminate">#4CAF50</color>
+    <color name="progress">#4CAF50</color>
+    <color name="secondary_progress">#4D4CAF50</color>
+    <color name="progress_background">#e6e6e6</color>
+    <color name="seek_bar_thumb">#4CAF50</color>
+    <color name="seek_bar_tick_mark">#4CAF50</color>
+
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFF</color>
     <color name="color_line">#dddddd</color>

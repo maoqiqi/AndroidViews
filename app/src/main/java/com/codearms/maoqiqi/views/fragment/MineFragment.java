@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.codearms.maoqiqi.views.R;
+import com.codearms.maoqiqi.views.activity.BarActivity;
 import com.codearms.maoqiqi.views.activity.GridLayoutImageButtonActivity;
 
 /**
@@ -25,7 +26,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
     private View rootView;
     public TextView tvGridLayoutImageButton;
-    public TextView tvProgressBar;
+    public TextView tvBar;
     public TextView tvSpinner;
     public TextView tvSlidingPaneLayout;
 
@@ -47,12 +48,12 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
         tvGridLayoutImageButton = rootView.findViewById(R.id.tv_grid_Layout_image_button);
-        tvProgressBar = rootView.findViewById(R.id.tv_progress_bar);
+        tvBar = rootView.findViewById(R.id.tv_bar);
         tvSpinner = rootView.findViewById(R.id.tv_spinner);
         tvSlidingPaneLayout = rootView.findViewById(R.id.tv_sliding_pane_layout);
 
         tvGridLayoutImageButton.setOnClickListener(this);
-        tvProgressBar.setOnClickListener(this);
+        tvBar.setOnClickListener(this);
         tvSpinner.setOnClickListener(this);
         tvSlidingPaneLayout.setOnClickListener(this);
     }
@@ -62,6 +63,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.tv_grid_Layout_image_button:
                 startActivity(new Intent(getActivity(), GridLayoutImageButtonActivity.class));
+                break;
+            case R.id.tv_bar:
+                startActivity(new Intent(getActivity(), BarActivity.class));
                 break;
         }
     }

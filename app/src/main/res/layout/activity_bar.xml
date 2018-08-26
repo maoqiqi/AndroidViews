@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.BarActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/sixteen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_1"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_2"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:indeterminateTint="@color/indeterminate" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/four"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/four"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="100"
+                android:progress="10"
+                android:progressDrawable="@drawable/progress_bar"
+                android:secondaryProgress="30" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/four"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="100"
+                android:progress="10"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressDrawable="@drawable/progress_bar"
+                android:progressTint="@color/progress"
+                android:secondaryProgress="30"
+                android:secondaryProgressTint="@color/secondary_progress" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_6"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/four"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="100"
+                android:progress="10"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressTint="@color/progress"
+                android:secondaryProgress="30"
+                android:secondaryProgressTint="@color/secondary_progress" />
+
+            <RatingBar
+                android:id="@+id/rating_bar_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty_two"
+                android:rating="2.5" />
+
+            <RatingBar
+                android:id="@+id/rating_bar_2"
+                style="@style/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:rating="2"
+                android:stepSize="1" />
+
+            <!--添加style="@style/Widget.AppCompat.RatingBar.Small"样式之后,默认不可以拖动。-->
+            <!--必须加android:isIndicator="false"-->
+
+            <RatingBar
+                android:id="@+id/rating_bar_3"
+                style="@style/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressTint="@color/progress"
+                android:rating="2"
+                android:secondaryProgressTint="@color/transparent"
+                android:stepSize="1" />
+
+            <RatingBar
+                android:id="@+id/rating_bar_4"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressTint="@color/progress"
+                android:rating="2"
+                android:secondaryProgressTint="@color/transparent"
+                android:stepSize="1" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty_two"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="100"
+                android:progress="10"
+                android:secondaryProgress="30"
+                android:thumb="@drawable/seek_bar" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="100"
+                android:progress="10"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressTint="@color/progress"
+                android:secondaryProgress="30"
+                android:secondaryProgressTint="@color/secondary_progress"
+                android:thumb="@drawable/seek_bar"
+                android:thumbTint="@color/seek_bar_thumb" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="100"
+                android:progress="10"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressTint="@color/progress"
+                android:secondaryProgress="30"
+                android:secondaryProgressTint="@color/secondary_progress"
+                android:thumbTint="@color/seek_bar_thumb" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_5"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_6"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:secondaryProgress="6"
+                android:tickMark="@drawable/tick_mark" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_7"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressTint="@color/progress"
+                android:secondaryProgress="6"
+                android:secondaryProgressTint="@color/secondary_progress"
+                android:thumbTint="@color/seek_bar_thumb"
+                android:tickMark="@drawable/tick_mark"
+                android:tickMarkTint="@color/seek_bar_tick_mark" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_8"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:max="10"
+                android:progress="3"
+                android:progressBackgroundTint="@color/progress_background"
+                android:progressTint="@color/progress"
+                android:secondaryProgress="6"
+                android:secondaryProgressTint="@color/secondary_progress"
+                android:thumbTint="@color/seek_bar_thumb"
+                android:tickMarkTint="@color/seek_bar_tick_mark" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
