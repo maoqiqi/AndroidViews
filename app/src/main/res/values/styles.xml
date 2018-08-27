@@ -28,6 +28,18 @@
         <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
     </style>
 
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+    <!--主题-->
+    <style name="AppTheme.SearchView">
+        <!--toolbar菜单项图标的颜色-->
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <!--修改searchView样式-->
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+    </style>
+
     <!--全屏-->
     <style name="AppTheme.Fullscreen">
         <item name="android:windowFullscreen">true</item>

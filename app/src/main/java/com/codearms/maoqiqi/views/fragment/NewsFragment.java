@@ -1,5 +1,6 @@
 package com.codearms.maoqiqi.views.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -17,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.codearms.maoqiqi.views.R;
+import com.codearms.maoqiqi.views.activity.SearchViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,6 +87,7 @@ public class NewsFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_search:
+                startActivity(new Intent(getActivity(), SearchViewActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);

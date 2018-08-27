@@ -35,6 +35,9 @@
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.DonateActivity" />
         <activity android:name=".activity.SettingActivity" />
+        <activity
+            android:name=".activity.SearchViewActivity"
+            android:theme="@style/AppTheme.SearchView" />
         <activity android:name=".activity.GridLayoutImageButtonActivity" />
         <activity android:name=".activity.BarActivity" />
         <activity android:name=".activity.SpinnerActivity" />

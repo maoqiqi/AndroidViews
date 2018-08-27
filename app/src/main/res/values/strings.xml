@@ -103,6 +103,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Demonstrate the use of SearchView.</item>
         <item>Demonstrate the use of SlidingPaneLayout.</item>
         <item>Demonstrate the use of Spinner.</item>
         <item>Demonstrate the use of ProgressBar, RatingBar and SeekBar.</item>
