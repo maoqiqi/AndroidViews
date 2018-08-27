@@ -29,6 +29,16 @@
     <string name="occupational">职业信息</string>
     <string name="occupational_label">职业</string>
     <string name="occupational_android">Android开发工程师</string>
+    <string-array name="occupational">
+        <item>Android开发工程师</item>
+        <item>iOS开发工程师</item>
+        <item>h5开发工程师</item>
+        <item>Java开发工程师</item>
+        <item>Go开发工程师</item>
+        <item>PHP开发工程师</item>
+        <item>C++开发工程师</item>
+        <item>.net开发工程师</item>
+    </string-array>
     <string name="school_label">学校</string>
     <string name="school">湖北工程学院</string>
     <string name="specialty_label">专业</string>
@@ -103,6 +113,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Complete OccupationalActivity.</item>
         <item>Demonstrate the use of CalendarView.</item>
         <item>Demonstrate the use of SearchView.</item>
         <item>Demonstrate the use of SlidingPaneLayout.</item>

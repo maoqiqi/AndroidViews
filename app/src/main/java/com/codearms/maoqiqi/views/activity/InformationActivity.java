@@ -70,6 +70,7 @@ public class InformationActivity extends BaseActivity implements View.OnClickLis
                 startActivity(new Intent(this, BirthdayActivity.class));
                 break;
             case R.id.ll_occupational:
+                startActivity(new Intent(this, OccupationalActivity.class));
                 break;
             case R.id.ll_school:
                 startActivity(new Intent(this, SchoolActivity.class));
