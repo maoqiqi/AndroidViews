@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.codearms.maoqiqi.views.R;
 import com.codearms.maoqiqi.views.activity.BarActivity;
 import com.codearms.maoqiqi.views.activity.GridLayoutImageButtonActivity;
+import com.codearms.maoqiqi.views.activity.SpinnerActivity;
 
 /**
  * MinePage
@@ -66,6 +67,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_bar:
                 startActivity(new Intent(getActivity(), BarActivity.class));
+                break;
+            case R.id.tv_spinner:
+                startActivity(new Intent(getActivity(), SpinnerActivity.class));
                 break;
         }
     }

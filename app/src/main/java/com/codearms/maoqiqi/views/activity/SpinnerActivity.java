@@ -9,17 +9,17 @@ import com.codearms.maoqiqi.views.R;
 /**
  * 演示ProgressBar、RatingBar、SeekBar
  * Author: fengqi.mao.march@gmail.com
- * Date: 2018/8/26 22:06
+ * Date: 2018/8/27 12:03
  */
-public class BarActivity extends BaseActivity {
+public class SpinnerActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bar);
+        setContentView(R.layout.activity_spinner);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.progress_bar);
+        toolbar.setTitle(R.string.spinner);
         setSupportActionBar(toolbar);
     }
 }
