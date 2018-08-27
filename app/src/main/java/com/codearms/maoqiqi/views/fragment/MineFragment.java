@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.codearms.maoqiqi.views.R;
 import com.codearms.maoqiqi.views.activity.BarActivity;
 import com.codearms.maoqiqi.views.activity.GridLayoutImageButtonActivity;
+import com.codearms.maoqiqi.views.activity.SlidingPaneLayoutActivity;
 import com.codearms.maoqiqi.views.activity.SpinnerActivity;
 
 /**
@@ -70,6 +71,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_spinner:
                 startActivity(new Intent(getActivity(), SpinnerActivity.class));
+                break;
+            case R.id.tv_sliding_pane_layout:
+                startActivity(new Intent(getActivity(), SlidingPaneLayoutActivity.class));
                 break;
         }
     }
