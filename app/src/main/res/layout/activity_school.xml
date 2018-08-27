@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -42,6 +41,9 @@
             android:textSelectHandleLeft="@drawable/text_select_handle_left"
             android:textSelectHandleRight="@drawable/text_select_handle_right"
             android:textSize="@dimen/text_size_normal" />
+
+        <!--android:completionThreshold="1":设置触发补全提示信息的字符个数-->
+        <!--android:dropDownVerticalOffset="1dp":设置下拉菜单于文本框之间的垂直偏移量-->
 
         <MultiAutoCompleteTextView
             android:id="@+id/multi_act_specialty"

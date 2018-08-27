@@ -23,6 +23,7 @@
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.InformationActivity" />
+        <activity android:name=".activity.BirthdayActivity" />
         <activity android:name=".activity.SchoolActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ScanCodeActivity" />

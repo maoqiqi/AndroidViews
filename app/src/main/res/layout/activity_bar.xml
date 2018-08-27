@@ -108,6 +108,7 @@
 
             <!--添加style="@style/Widget.AppCompat.RatingBar.Small"样式之后,默认不可以拖动。-->
             <!--必须加android:isIndicator="false"-->
+            <!--android:progressDrawable="@drawable/rating_bar":必须使用样式-->
 
             <RatingBar
                 android:id="@+id/rating_bar_3"
