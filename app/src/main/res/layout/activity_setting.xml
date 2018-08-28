@@ -187,6 +187,60 @@
                 android:layout_marginTop="@dimen/twenty_four"
                 android:background="@color/color_line" />
 
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/setting_wifi"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/setting_phone"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/setting_email"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_setting_item"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:paddingEnd="@dimen/sixteen"
+                android:paddingStart="@dimen/twelve"
+                android:text="@string/setting_nick_name"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginTop="@dimen/twenty_four"
+                android:background="@color/color_line" />
+
             <RelativeLayout
                 android:id="@+id/rl_system_animation"
                 android:layout_width="match_parent"
