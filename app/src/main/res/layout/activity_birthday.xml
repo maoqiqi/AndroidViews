@@ -9,8 +9,51 @@
 
     <include layout="@layout/layout_title" />
 
-    <CalendarView
-        android:id="@+id/cv_birthday"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CalendarView
+                android:id="@+id/cv_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dateTextAppearance="@style/calendar_view_date"
+
+                android:weekDayTextAppearance="@style/calendar_view_week_day" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarTextColor="@color/color_accent"
+                android:datePickerMode="calendar"
+                android:headerBackground="@color/color_primary" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarTextColor="@color/color_accent"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:headerBackground="@color/color_primary"
+                android:timePickerMode="clock" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:timePickerMode="spinner" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

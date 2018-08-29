@@ -5,7 +5,8 @@
     <color name="color_accent">#FF4081</color>
     <color name="bg">#f8f8f8</color>
     <color name="bg_item_pressed">#eeeeee</color>
-    <color name="bg_jump">#88000000</color>
+    <color name="bg_jump">#80A9A9A9</color>
+    <color name="bg_jump_pressed">#CCA9A9A9</color>
     <color name="text_color_title">#ffffff</color>
     <color name="text_color_primary">#3a3a3a</color>
     <color name="text_color_hint">#A9A9A9</color>

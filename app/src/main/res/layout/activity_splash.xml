@@ -13,8 +13,8 @@
         android:scaleType="fitXY"
         android:src="@drawable/bg_splash_placeholder" />
 
-    <TextView
-        android:id="@+id/tv_jump"
+    <Button
+        android:id="@+id/btn_jump"
         android:layout_width="70dp"
         android:layout_height="28dp"
         android:layout_gravity="end"
@@ -38,11 +38,11 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:contentDescription="@string/logo_description"
+            android:contentDescription="@string/launcher_description"
             android:src="@mipmap/ic_launcher" />
 
         <View
-            android:layout_width="1dp"
+            android:layout_width="0.5dp"
             android:layout_height="36dp"
             android:layout_marginLeft="@dimen/sixteen"
             android:layout_marginRight="@dimen/sixteen"

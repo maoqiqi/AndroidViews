@@ -42,7 +42,8 @@
                     android:layout_marginBottom="@dimen/four"
                     android:layout_marginEnd="@dimen/four"
                     android:contentDescription="@string/camera_description"
-                    android:src="@drawable/ic_camera" />
+                    android:src="@drawable/ic_camera"
+                    android:tint="@color/color_primary" />
             </FrameLayout>
 
             <View
@@ -57,7 +58,8 @@
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -93,11 +95,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_information_item"
-                android:clickable="true"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -125,7 +127,8 @@
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -172,7 +175,8 @@
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -237,7 +241,10 @@
                 android:background="@color/bg_item_pressed"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
-                android:padding="@dimen/eight"
+                android:paddingBottom="@dimen/eight"
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve"
+                android:paddingTop="@dimen/eight"
                 android:text="@string/occupational"
                 android:textColor="@color/text_color_gray"
                 android:textSize="@dimen/text_size_normal"
@@ -253,11 +260,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_information_item"
-                android:clickable="true"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -282,11 +289,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_information_item"
-                android:clickable="true"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -311,11 +318,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_information_item"
-                android:clickable="true"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -340,11 +347,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_information_item"
-                android:clickable="true"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -369,11 +376,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_information_item"
-                android:clickable="true"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/eight">
+                android:paddingEnd="@dimen/eight"
+                android:paddingStart="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"

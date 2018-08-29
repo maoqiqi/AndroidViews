@@ -7,8 +7,8 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.codearms.maoqiqi.views.R;
 
@@ -21,11 +21,15 @@ import java.lang.ref.WeakReference;
  */
 public class SplashActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final int WHAT_COUNT = 0;
+    private static final int WHAT_START = 1;
+    private static final int DELAY_MILLIS = 1000;
+
     private int count = 3;
     private boolean isFirstStart = false;
 
     private ImageView ivSplash;
-    private TextView tvJump;
+    private Button btnJump;
 
     private MyHandler handler;
 
@@ -35,17 +39,17 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_splash);
 
         ivSplash = findViewById(R.id.iv_splash);
-        tvJump = findViewById(R.id.tv_jump);
+        btnJump = findViewById(R.id.btn_jump);
 
-        tvJump.setOnClickListener(this);
+        btnJump.setOnClickListener(this);
 
         handler = new MyHandler(this);
-        handler.sendEmptyMessageDelayed(0, 1000);
+        handler.sendEmptyMessageDelayed(WHAT_COUNT, DELAY_MILLIS);
     }
 
     @Override
     public void onClick(View v) {
-        handler.removeMessages(1);
+        handler.removeMessages(WHAT_START);
         startActivity();
     }
 
@@ -78,25 +82,25 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
             switch (msg.what) {
-                case 0:
+                case WHAT_COUNT:
                     if (weakReference.get() != null) {
                         SplashActivity activity = weakReference.get();
-                        activity.tvJump.setVisibility(View.VISIBLE);
-                        activity.tvJump.setText(activity.getString(R.string.jump, activity.count));
+                        activity.btnJump.setVisibility(View.VISIBLE);
+                        activity.btnJump.setText(activity.getString(R.string.jump, activity.count));
                         activity.ivSplash.setImageResource(R.drawable.bg_splash);
-                        activity.handler.sendEmptyMessageDelayed(1, 1000);
+                        activity.handler.sendEmptyMessageDelayed(WHAT_START, DELAY_MILLIS);
                     }
                     break;
-                case 1:
+                case WHAT_START:
                     if (weakReference.get() != null) {
                         SplashActivity activity = weakReference.get();
                         activity.count--;
                         if (activity.count == 0) {
-                            activity.tvJump.setVisibility(View.GONE);
+                            activity.btnJump.setVisibility(View.GONE);
                             activity.startActivity();
                         } else {
-                            activity.tvJump.setText(activity.getString(R.string.jump, activity.count));
-                            activity.handler.sendEmptyMessageDelayed(1, 1000);
+                            activity.btnJump.setText(activity.getString(R.string.jump, activity.count));
+                            activity.handler.sendEmptyMessageDelayed(WHAT_START, DELAY_MILLIS);
                         }
                     }
                     break;

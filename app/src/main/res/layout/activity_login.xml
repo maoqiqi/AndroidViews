@@ -72,7 +72,7 @@
             style="?android:buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="@dimen/thirty_two"
             android:background="@drawable/bg_btn"
             android:backgroundTint="@color/bg_btn_tint"
             android:enabled="false"
@@ -89,21 +89,22 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/sixteen">
 
-            <TextView
-                android:id="@+id/tv_forget_password"
+            <Button
+                style="@style/btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/forget_password"
-                android:textColor="@drawable/text_color_login"
+                android:textColor="@drawable/text_color_gray_selector"
                 android:textSize="@dimen/text_size_small" />
 
-            <TextView
-                android:id="@+id/tv_new_user_register"
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_new_user_register"
+                style="@style/btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:text="@string/new_user_register"
-                android:textColor="@drawable/text_color_login"
+                android:textColor="@drawable/text_color_gray_selector"
                 android:textSize="@dimen/text_size_small" />
         </FrameLayout>
     </LinearLayout>

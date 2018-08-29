@@ -60,10 +60,27 @@
         <!--<item name="android:windowTranslucentStatus">true</item>-->
     </style>
 
+    <!--Button样式-->
+    <style name="btn" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
     <!--android.support.design.widget.TextInputLayout 提示字体样式-->
-    <style name="text_input_layout" parent="TextAppearance.AppCompat">
+    <style name="text_input_layout_hint" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/color_accent</item>
         <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+
+    <!--CalendarView 样式-->
+    <style name="calendar_view_week_day" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="calendar_view_date" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_small</item>
     </style>
 
     <!--android.support.v7.widget.SwitchCompat 开关文字样式-->

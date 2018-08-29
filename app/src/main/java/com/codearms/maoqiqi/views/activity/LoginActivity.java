@@ -26,8 +26,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     private EditText etEmail;
     private EditText etPassword;
     private Button btnLogin;
-    private TextView tvForgetPassword;
-    private TextView tvNewUserRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +39,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
         btnLogin = findViewById(R.id.btn_login);
-        tvForgetPassword = findViewById(R.id.tv_forget_password);
-        tvNewUserRegister = findViewById(R.id.tv_new_user_register);
 
         etEmail.addTextChangedListener(textWatcher);
         etPassword.addTextChangedListener(textWatcher);
@@ -64,8 +60,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         });
 
         btnLogin.setOnClickListener(this);
-        tvForgetPassword.setOnClickListener(this);
-        tvNewUserRegister.setOnClickListener(this);
+        findViewById(R.id.btn_new_user_register).setOnClickListener(this);
     }
 
     @Override
@@ -74,9 +69,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             case R.id.btn_login:
                 startActivity(new Intent(this, MainActivity.class));
                 break;
-            case R.id.tv_forget_password:
-                break;
-            case R.id.tv_new_user_register:
+            case R.id.btn_new_user_register:
                 startActivity(new Intent(this, RegisterActivity.class));
                 break;
         }

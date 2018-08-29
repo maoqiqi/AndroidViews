@@ -2,7 +2,7 @@
     <string name="app_name">AndroidViews</string>
     <string name="splash_description">splash</string>
     <string name="jump">跳过 %1$d</string>
-    <string name="logo_description">logo</string>
+    <string name="launcher_description">launcher</string>
     <string name="description_1">干货集中营</string>
     <string name="description_2">每天都有新发现</string>
     <string name="email">Email</string>
@@ -12,6 +12,7 @@
     <string name="new_user_register">新用户注册</string>
     <string name="login_error">Please input email and password.</string>
     <string name="register">Register</string>
+    <string name="registration_agreement">《<u>点击“Register”按钮即表示同意注册协议</u>》</string>
     <string name="information">Information</string>
     <string name="nick_name_label">昵称</string>
     <string name="nick_name">AndroidViews</string>
@@ -113,6 +114,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Complete AddressActivity and Fix some detail questions.</item>
         <item>Setting interface add more content.</item>
         <item>Complete OccupationalActivity.</item>
         <item>Demonstrate the use of CalendarView.</item>
@@ -221,5 +223,10 @@
         <item>恩施土家族苗族自治州</item>
         <item>宜昌市</item>
         <item>荆州市</item>
+    </string-array>
+    <string-array name="districts">
+        <item>建始县</item>
+        <item>巴东县</item>
+        <item>利川市</item>
     </string-array>
 </resources>
