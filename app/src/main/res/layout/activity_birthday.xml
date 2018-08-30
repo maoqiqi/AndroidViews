@@ -30,7 +30,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:calendarTextColor="@color/color_accent"
                 android:datePickerMode="calendar"
                 android:headerBackground="@color/color_primary" />
 
@@ -38,7 +37,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:calendarTextColor="@color/color_accent"
                 android:calendarViewShown="false"
                 android:datePickerMode="spinner" />
 
@@ -47,6 +45,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:headerBackground="@color/color_primary"
+                android:numbersBackgroundColor="@color/text_color_gray"
+                android:numbersSelectorColor="@color/color_primary"
+                android:numbersTextColor="@color/text_color_primary"
                 android:timePickerMode="clock" />
 
             <TimePicker

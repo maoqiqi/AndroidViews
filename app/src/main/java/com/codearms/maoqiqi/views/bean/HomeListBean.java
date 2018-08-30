@@ -4,6 +4,11 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+/**
+ * 首页数据实体类
+ * Author: fengqi.mao.march@gmail.com
+ * Date: 2018/8/23 17:41
+ */
 public class HomeListBean {
     @SerializedName("error")
     private boolean error;

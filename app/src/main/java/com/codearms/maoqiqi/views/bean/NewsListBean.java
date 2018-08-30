@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 /**
- * 新闻数据
+ * 新闻数据实体类
  * Author: fengqi.mao.march@gmail.com
  * Date: 2018/8/23 21:38
  */
