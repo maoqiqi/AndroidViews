@@ -37,9 +37,4 @@
         android:paddingRight="@dimen/sixteen"
         android:textColor="@color/text_color_primary"
         android:textSize="@dimen/text_size_small" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/line_height"
-        android:background="@color/color_line" />
 </LinearLayout>

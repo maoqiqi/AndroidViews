@@ -43,7 +43,7 @@
         <activity
             android:name=".activity.SearchViewActivity"
             android:theme="@style/AppTheme.SearchView" />
-        <activity android:name=".activity.GridLayoutImageButtonActivity" />
+        <activity android:name=".activity.GridLayoutImageViewActivity" />
         <activity android:name=".activity.BarActivity" />
         <activity android:name=".activity.SpinnerActivity" />
         <activity android:name=".activity.SlidingPaneLayoutActivity" />

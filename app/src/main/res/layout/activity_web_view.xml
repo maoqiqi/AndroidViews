@@ -27,9 +27,7 @@
             android:layout_alignParentTop="true"
             android:max="100"
             android:progress="100"
-            android:progressBackgroundTint="@color/text_color_gray"
-            android:progressTint="@color/color_primary"
-            android:secondaryProgressTint="@color/color_primary"
+            android:progressDrawable="@drawable/web_progress_bar"
             android:visibility="gone" />
     </RelativeLayout>
 </LinearLayout>

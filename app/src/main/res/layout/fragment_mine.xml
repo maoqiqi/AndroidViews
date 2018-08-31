@@ -63,7 +63,7 @@
         android:background="@color/color_line" />
 
     <TextView
-        android:id="@+id/tv_grid_Layout_image_button"
+        android:id="@+id/tv_grid_Layout_image_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_setting_item"
@@ -73,7 +73,7 @@
         android:minHeight="48dp"
         android:paddingEnd="@dimen/twelve"
         android:paddingStart="@dimen/sixteen"
-        android:text="@string/grid_Layout_image_button"
+        android:text="@string/grid_Layout_image_view"
         android:textColor="@color/text_color_primary"
         android:textSize="@dimen/text_size_normal" />
 

@@ -18,18 +18,21 @@
         <NumberPicker
             android:id="@+id/np_province"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:solidColor="@color/color_accent" />
 
         <NumberPicker
             android:id="@+id/np_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/sixteen"
-            android:layout_marginStart="@dimen/sixteen" />
+            android:layout_marginStart="@dimen/sixteen"
+            android:solidColor="@color/color_primary" />
 
         <NumberPicker
             android:id="@+id/np_district"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:solidColor="@color/switch_mark_checked" />
     </LinearLayout>
 </LinearLayout>

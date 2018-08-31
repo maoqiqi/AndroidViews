@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.GridLayoutImageViewActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_item_pressed"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingBottom="@dimen/eight"
+        android:paddingEnd="@dimen/eight"
+        android:paddingStart="@dimen/twelve"
+        android:paddingTop="@dimen/eight"
+        android:text="@string/grid_layout_1"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_small" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_food" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:background="@drawable/bg_navigation_item"
+            android:clickable="true"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_home_movie" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:background="@null"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_hotel" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:background="@drawable/bg_navigation_item"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_home_entertainment" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_food" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:background="@drawable/bg_navigation_item"
+            android:clickable="true"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_home_movie" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:background="@null"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home_hotel" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:background="@drawable/bg_navigation_item"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_home_entertainment" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_item_pressed"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingBottom="@dimen/eight"
+        android:paddingEnd="@dimen/eight"
+        android:paddingStart="@dimen/twelve"
+        android:paddingTop="@dimen/eight"
+        android:text="@string/grid_layout_2"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_small" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3">
+
+        <TableRow>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_home_food" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_navigation_item"
+                android:clickable="true"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_home_movie" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_home_hotel" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_navigation_item"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_home_entertainment" />
+        </TableRow>
+
+        <TableRow>
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_home_food" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_navigation_item"
+                android:clickable="true"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_home_movie" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_home_hotel" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_navigation_item"
+                android:contentDescription="@string/image_description"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_home_entertainment" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

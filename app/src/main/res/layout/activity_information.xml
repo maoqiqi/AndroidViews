@@ -208,7 +208,7 @@
                     android:textColor="@drawable/text_color_button"
                     android:textSize="@dimen/text_size_normal" />
 
-                <CheckBox
+                <android.support.v7.widget.AppCompatCheckBox
                     android:id="@+id/cb_shu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -218,15 +218,15 @@
                     android:textColor="@drawable/text_color_button"
                     android:textSize="@dimen/text_size_normal" />
 
-                <CheckBox
+                <android.support.v7.widget.AppCompatCheckBox
                     android:id="@+id/cb_hua"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/sixteen"
-                    android:buttonTint="@color/button_tint"
                     android:text="@string/hua"
                     android:textColor="@drawable/text_color_button"
-                    android:textSize="@dimen/text_size_normal" />
+                    android:textSize="@dimen/text_size_normal"
+                    app:buttonTint="@color/button_tint" />
             </LinearLayout>
 
             <View

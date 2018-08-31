@@ -11,15 +11,15 @@ import com.codearms.maoqiqi.views.R;
  * Author: fengqi.mao.march@gmail.com
  * Date: 2018/8/26 22:06
  */
-public class GridLayoutImageButtonActivity extends BaseActivity {
+public class GridLayoutImageViewActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grid_layout_image_button);
+        setContentView(R.layout.activity_grid_layout_image_view);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.grid_Layout_image_button);
+        toolbar.setTitle(R.string.grid_Layout_image_view);
         setSupportActionBar(toolbar);
     }
 }

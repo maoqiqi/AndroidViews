@@ -46,7 +46,7 @@ public class WebViewActivity extends BaseActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.loading);
-        // toolbar.setOverflowIcon(ContextCompat.getDrawable(this, R.drawable.ic_menu_more));
+        toolbar.setOverflowIcon(ContextCompat.getDrawable(this, R.drawable.ic_menu_more));
         setSupportActionBar(toolbar);
 
         webView = findViewById(R.id.web_view);

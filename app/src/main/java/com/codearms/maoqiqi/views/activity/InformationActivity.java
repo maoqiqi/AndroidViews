@@ -82,6 +82,7 @@ public class InformationActivity extends BaseActivity implements View.OnClickLis
                 startActivity(new Intent(this, AddressActivity.class));
                 break;
             case R.id.ll_home_page:
+                WebViewActivity.start(this, "", getString(R.string.home_page));
                 break;
             case R.id.btn_finish:
                 startActivity(new Intent(this, MainActivity.class));

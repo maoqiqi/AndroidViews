@@ -207,7 +207,9 @@
     <string name="welfare_description">welfare</string>
     <string name="image_description">image</string>
     <string name="phone">152******17</string>
-    <string name="grid_Layout_image_button">GridLayout &amp; ImageButton</string>
+    <string name="grid_Layout_image_view">表格布局 &amp; ImageView 系列</string>
+    <string name="grid_layout_1">GridLayout+ImageView+ImageButton</string>
+    <string name="grid_layout_2">TableLayout+TableRow+ImageView+ImageButton</string>
     <string name="bar">ProgressBar &amp; RatingBar &amp; SeekBar</string>
     <string name="spinner">Spinner</string>
     <string name="sliding_pane_layout">SlidingPaneLayout</string>
