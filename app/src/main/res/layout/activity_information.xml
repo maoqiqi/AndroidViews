@@ -12,7 +12,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbarSize="@dimen/four"
+        android:scrollbarThumbVertical="@drawable/scroll_thumb"
+        android:scrollbarTrackVertical="@color/transparent">
+
+        <!--android:scrollbarThumbVertical和android:scrollbarTrackVertical-->
+        <!--不可以直接设置为颜色值,但可以使用@color的方式使用颜色值。-->
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -114,6 +114,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Demonstrate the use of HorizontalScrollView and add custom scroll bar style.</item>
         <item>Demonstrate the use of TextClock and add app compat views.</item>
         <item>Perfect detail and fix bug.</item>
         <item>Perfect AddressActivity province city district level 3 cascade.</item>
@@ -211,6 +212,7 @@
     <string name="image_description">image</string>
     <string name="phone">152******17</string>
     <string name="text_clock">TextClock</string>
+    <string name="horizontal_scroll_view">HorizontalScrollView</string>
     <string name="grid_Layout_image_view">表格布局 &amp; ImageView 系列</string>
     <string name="grid_layout_1">GridLayout+ImageView+ImageButton</string>
     <string name="grid_layout_2">TableLayout+TableRow+ImageView+ImageButton</string>

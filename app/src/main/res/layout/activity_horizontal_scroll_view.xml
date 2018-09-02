@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.HorizontalScrollViewActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="@dimen/four"
+        android:scrollbarThumbHorizontal="@drawable/scroll_thumb"
+        android:scrollbarTrackHorizontal="@color/bg_item_pressed">
+
+        <!--android:scrollbarThumbHorizontal和android:scrollbarTrackHorizontal-->
+        <!--不可以直接设置为颜色值,但可以使用@color的方式使用颜色值。-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/launcher_description"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
