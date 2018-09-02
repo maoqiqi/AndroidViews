@@ -7,19 +7,19 @@ import com.codearms.maoqiqi.views.BaseActivity;
 import com.codearms.maoqiqi.views.R;
 
 /**
- * 演示GridLayout、TableLayout、TableRow、ImageView、ImageButton
+ * 演示TextClock
  * Author: fengqi.mao.march@gmail.com
- * Date: 2018/8/26 22:06
+ * Date: 2018/9/1 16:18
  */
-public class GridLayoutImageViewActivity extends BaseActivity {
+public class TextClockActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grid_layout_image_view);
+        setContentView(R.layout.activity_text_clock);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.grid_Layout_image_view);
+        toolbar.setTitle(R.string.text_clock);
         setSupportActionBar(toolbar);
     }
 }

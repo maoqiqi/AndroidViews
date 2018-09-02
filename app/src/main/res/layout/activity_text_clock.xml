@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".activity.TextClockActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format24Hour="今天是yyyy年MM月dd日,EE,aa h:mm。"
+        android:padding="@dimen/sixteen"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_normal" />
+</LinearLayout>

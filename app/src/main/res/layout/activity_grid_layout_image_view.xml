@@ -125,7 +125,7 @@
             app:srcCompat="@drawable/ic_home_entertainment" />
     </GridLayout>
 
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bg_item_pressed"

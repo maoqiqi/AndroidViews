@@ -44,7 +44,7 @@
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/text_size_normal" />
 
-            <CheckedTextView
+            <android.support.v7.widget.AppCompatCheckedTextView
                 android:id="@+id/remember_password_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

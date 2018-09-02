@@ -114,6 +114,9 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Demonstrate the use of TextClock and add app compat views.</item>
+        <item>Perfect detail and fix bug.</item>
+        <item>Perfect AddressActivity province city district level 3 cascade.</item>
         <item>Complete AddressActivity and Fix some detail questions.</item>
         <item>Setting interface add more content.</item>
         <item>Complete OccupationalActivity.</item>
@@ -207,6 +210,7 @@
     <string name="welfare_description">welfare</string>
     <string name="image_description">image</string>
     <string name="phone">152******17</string>
+    <string name="text_clock">TextClock</string>
     <string name="grid_Layout_image_view">表格布局 &amp; ImageView 系列</string>
     <string name="grid_layout_1">GridLayout+ImageView+ImageButton</string>
     <string name="grid_layout_2">TableLayout+TableRow+ImageView+ImageButton</string>

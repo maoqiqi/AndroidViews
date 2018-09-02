@@ -21,7 +21,7 @@
             android:fitsSystemWindows="true"
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
             app:contentScrim="@color/color_primary"
-            app:expandedTitleMargin="16dp"
+            app:expandedTitleMargin="@dimen/sixteen"
             app:expandedTitleTextAppearance="@style/project_introduction_expanded_title_text_appearance"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:statusBarScrim="@color/color_primary_dark">
