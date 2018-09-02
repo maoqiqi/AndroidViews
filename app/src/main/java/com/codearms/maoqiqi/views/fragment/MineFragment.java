@@ -20,6 +20,7 @@ import com.codearms.maoqiqi.views.activity.HorizontalScrollViewActivity;
 import com.codearms.maoqiqi.views.activity.SlidingPaneLayoutActivity;
 import com.codearms.maoqiqi.views.activity.SpinnerActivity;
 import com.codearms.maoqiqi.views.activity.TextClockActivity;
+import com.codearms.maoqiqi.views.activity.ViewSwitcherActivity;
 
 /**
  * MinePage
@@ -29,12 +30,6 @@ import com.codearms.maoqiqi.views.activity.TextClockActivity;
 public class MineFragment extends Fragment implements View.OnClickListener {
 
     private View rootView;
-    private TextView tvTextClock;
-    private TextView tvHorizontalScrollView;
-    public TextView tvGridLayoutImageView;
-    public TextView tvBar;
-    public TextView tvSpinner;
-    public TextView tvSlidingPaneLayout;
 
     public static MineFragment newInstance() {
         return new MineFragment();
@@ -53,15 +48,17 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setHasOptionsMenu(true);
-        tvTextClock = rootView.findViewById(R.id.tv_text_clock);
-        tvHorizontalScrollView = rootView.findViewById(R.id.tv_horizontal_scroll_view);
-        tvGridLayoutImageView = rootView.findViewById(R.id.tv_grid_Layout_image_view);
-        tvBar = rootView.findViewById(R.id.tv_bar);
-        tvSpinner = rootView.findViewById(R.id.tv_spinner);
-        tvSlidingPaneLayout = rootView.findViewById(R.id.tv_sliding_pane_layout);
+        TextView tvTextClock = rootView.findViewById(R.id.tv_text_clock);
+        TextView tvHorizontalScrollView = rootView.findViewById(R.id.tv_horizontal_scroll_view);
+        TextView tvViewSwitcher = rootView.findViewById(R.id.tv_view_switcher);
+        TextView tvGridLayoutImageView = rootView.findViewById(R.id.tv_grid_Layout_image_view);
+        TextView tvBar = rootView.findViewById(R.id.tv_bar);
+        TextView tvSpinner = rootView.findViewById(R.id.tv_spinner);
+        TextView tvSlidingPaneLayout = rootView.findViewById(R.id.tv_sliding_pane_layout);
 
         tvTextClock.setOnClickListener(this);
         tvHorizontalScrollView.setOnClickListener(this);
+        tvViewSwitcher.setOnClickListener(this);
         tvGridLayoutImageView.setOnClickListener(this);
         tvBar.setOnClickListener(this);
         tvSpinner.setOnClickListener(this);
@@ -76,6 +73,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_horizontal_scroll_view:
                 startActivity(new Intent(getActivity(), HorizontalScrollViewActivity.class));
+                break;
+            case R.id.tv_view_switcher:
+                startActivity(new Intent(getActivity(), ViewSwitcherActivity.class));
                 break;
             case R.id.tv_grid_Layout_image_view:
                 startActivity(new Intent(getActivity(), GridLayoutImageViewActivity.class));
