@@ -9,9 +9,21 @@
 
     <include layout="@layout/layout_title" />
 
+    <ImageSwitcher
+        android:id="@+id/image_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <TextSwitcher
         android:id="@+id/text_switcher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/bg_item_pressed" />
+
+    <ViewSwitcher
+        android:id="@+id/view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen"
         android:background="@color/bg_item_pressed" />
 </LinearLayout>

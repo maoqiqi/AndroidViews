@@ -114,6 +114,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Add simple code for ImageSwitcher and ViewSwitcher.</item>
         <item>Demonstrate the use of TextSwitcher.</item>
         <item>Demonstrate the use of HorizontalScrollView and add custom scroll bar style.</item>
         <item>Demonstrate the use of TextClock and add app compat views.</item>
@@ -221,6 +222,7 @@
         <item>郑重公告</item>
         <item>国家大数据发展纲要</item>
     </string-array>
+    <string name="hot">最热</string>
     <string name="grid_Layout_image_view">GridLayout &amp; ImageView</string>
     <string name="grid_layout_1">GridLayout+ImageView+ImageButton</string>
     <string name="grid_layout_2">TableLayout+TableRow+ImageView+ImageButton</string>
