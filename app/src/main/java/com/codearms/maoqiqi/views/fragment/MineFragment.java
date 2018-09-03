@@ -18,7 +18,6 @@ import com.codearms.maoqiqi.views.activity.BarActivity;
 import com.codearms.maoqiqi.views.activity.GridLayoutImageViewActivity;
 import com.codearms.maoqiqi.views.activity.HorizontalScrollViewActivity;
 import com.codearms.maoqiqi.views.activity.SlidingPaneLayoutActivity;
-import com.codearms.maoqiqi.views.activity.SpinnerActivity;
 import com.codearms.maoqiqi.views.activity.TextClockActivity;
 import com.codearms.maoqiqi.views.activity.ViewSwitcherActivity;
 
@@ -53,7 +52,6 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         TextView tvViewSwitcher = rootView.findViewById(R.id.tv_view_switcher);
         TextView tvGridLayoutImageView = rootView.findViewById(R.id.tv_grid_Layout_image_view);
         TextView tvBar = rootView.findViewById(R.id.tv_bar);
-        TextView tvSpinner = rootView.findViewById(R.id.tv_spinner);
         TextView tvSlidingPaneLayout = rootView.findViewById(R.id.tv_sliding_pane_layout);
 
         tvTextClock.setOnClickListener(this);
@@ -61,7 +59,6 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         tvViewSwitcher.setOnClickListener(this);
         tvGridLayoutImageView.setOnClickListener(this);
         tvBar.setOnClickListener(this);
-        tvSpinner.setOnClickListener(this);
         tvSlidingPaneLayout.setOnClickListener(this);
     }
 
@@ -82,9 +79,6 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_bar:
                 startActivity(new Intent(getActivity(), BarActivity.class));
-                break;
-            case R.id.tv_spinner:
-                startActivity(new Intent(getActivity(), SpinnerActivity.class));
                 break;
             case R.id.tv_sliding_pane_layout:
                 startActivity(new Intent(getActivity(), SlidingPaneLayoutActivity.class));

@@ -35,4 +35,92 @@
             android:layout_height="wrap_content"
             android:solidColor="@color/switch_mark_checked" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/thirty_two"
+        android:background="@color/color_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_information_item"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/sixteen"
+        android:paddingStart="@dimen/sixteen">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/province"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:prompt="@string/province"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_information_item"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/sixteen"
+        android:paddingStart="@dimen/sixteen">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/city"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownVerticalOffset="48dp"
+            android:gravity="end"
+            android:prompt="@string/city"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_information_item"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/sixteen"
+        android:paddingStart="@dimen/sixteen">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/district"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_normal" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:prompt="@string/district"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
 </LinearLayout>

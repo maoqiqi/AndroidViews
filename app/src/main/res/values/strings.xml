@@ -114,6 +114,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Perfect AddressActivity.</item>
         <item>Add simple code for ImageSwitcher and ViewSwitcher.</item>
         <item>Demonstrate the use of TextSwitcher.</item>
         <item>Demonstrate the use of HorizontalScrollView and add custom scroll bar style.</item>
@@ -227,24 +228,9 @@
     <string name="grid_layout_1">GridLayout+ImageView+ImageButton</string>
     <string name="grid_layout_2">TableLayout+TableRow+ImageView+ImageButton</string>
     <string name="bar">ProgressBar &amp; RatingBar &amp; SeekBar</string>
-    <string name="spinner">Spinner</string>
     <string name="sliding_pane_layout">SlidingPaneLayout</string>
     <string name="progress_bar">ProgressBar以及子类使用</string>
     <string name="province">省</string>
-    <string-array name="provinces">
-        <item>湖北</item>
-        <item>上海</item>
-        <item>浙江</item>
-    </string-array>
     <string name="city">市</string>
-    <string-array name="cities">
-        <item>恩施土家族苗族自治州</item>
-        <item>宜昌市</item>
-        <item>荆州市</item>
-    </string-array>
-    <string-array name="districts">
-        <item>建始县</item>
-        <item>巴东县</item>
-        <item>利川市</item>
-    </string-array>
+    <string name="district">区</string>
 </resources>
