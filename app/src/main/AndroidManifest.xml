@@ -46,9 +46,9 @@
         <activity android:name=".activity.TextClockActivity" />
         <activity android:name=".activity.HorizontalScrollViewActivity" />
         <activity android:name=".activity.ViewSwitcherActivity" />
+        <activity android:name=".activity.GalleryActivity" />
         <activity android:name=".activity.GridLayoutImageViewActivity" />
         <activity android:name=".activity.BarActivity" />
-        <activity android:name=".activity.SpinnerActivity" />
         <activity android:name=".activity.SlidingPaneLayoutActivity" />
     </application>
 

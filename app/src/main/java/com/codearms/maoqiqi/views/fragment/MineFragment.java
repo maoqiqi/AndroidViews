@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.codearms.maoqiqi.views.R;
 import com.codearms.maoqiqi.views.activity.BarActivity;
+import com.codearms.maoqiqi.views.activity.GalleryActivity;
 import com.codearms.maoqiqi.views.activity.GridLayoutImageViewActivity;
 import com.codearms.maoqiqi.views.activity.HorizontalScrollViewActivity;
 import com.codearms.maoqiqi.views.activity.SlidingPaneLayoutActivity;
@@ -50,6 +51,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         TextView tvTextClock = rootView.findViewById(R.id.tv_text_clock);
         TextView tvHorizontalScrollView = rootView.findViewById(R.id.tv_horizontal_scroll_view);
         TextView tvViewSwitcher = rootView.findViewById(R.id.tv_view_switcher);
+        TextView tvGallery = rootView.findViewById(R.id.tv_gallery);
         TextView tvGridLayoutImageView = rootView.findViewById(R.id.tv_grid_Layout_image_view);
         TextView tvBar = rootView.findViewById(R.id.tv_bar);
         TextView tvSlidingPaneLayout = rootView.findViewById(R.id.tv_sliding_pane_layout);
@@ -57,6 +59,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         tvTextClock.setOnClickListener(this);
         tvHorizontalScrollView.setOnClickListener(this);
         tvViewSwitcher.setOnClickListener(this);
+        tvGallery.setOnClickListener(this);
         tvGridLayoutImageView.setOnClickListener(this);
         tvBar.setOnClickListener(this);
         tvSlidingPaneLayout.setOnClickListener(this);
@@ -73,6 +76,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_view_switcher:
                 startActivity(new Intent(getActivity(), ViewSwitcherActivity.class));
+                break;
+            case R.id.tv_gallery:
+                startActivity(new Intent(getActivity(), GalleryActivity.class));
                 break;
             case R.id.tv_grid_Layout_image_view:
                 startActivity(new Intent(getActivity(), GridLayoutImageViewActivity.class));
