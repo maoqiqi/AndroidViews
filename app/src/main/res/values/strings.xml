@@ -114,6 +114,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Add simple code for ViewFlipper.</item>
         <item>Update MineFragment and Add simple code for StackView.</item>
         <item>Add simple code for ExpandableListView.</item>
         <item>Add simple code for Gallery.</item>
@@ -227,6 +228,7 @@
         <item>国家大数据发展纲要</item>
     </string-array>
     <string name="hot">最热</string>
+    <string name="view_flipper">ViewFlipper</string>
     <string name="gallery">Gallery</string>
     <string name="expandable_list_view">ExpandableListView</string>
     <string name="stack_view">StackView</string>

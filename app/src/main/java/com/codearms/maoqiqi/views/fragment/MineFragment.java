@@ -22,6 +22,7 @@ import com.codearms.maoqiqi.views.activity.HorizontalScrollViewActivity;
 import com.codearms.maoqiqi.views.activity.SlidingPaneLayoutActivity;
 import com.codearms.maoqiqi.views.activity.StackViewActivity;
 import com.codearms.maoqiqi.views.activity.TextClockActivity;
+import com.codearms.maoqiqi.views.activity.ViewFlipperActivity;
 import com.codearms.maoqiqi.views.activity.ViewSwitcherActivity;
 
 /**
@@ -33,10 +34,10 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
     private View rootView;
     private int[] ids = {R.id.tv_text_clock, R.id.tv_horizontal_scroll_view, R.id.tv_view_switcher,
-            R.id.tv_gallery, R.id.tv_expandable_list_view, R.id.tv_stack_view,
+            R.id.tv_view_flipper, R.id.tv_gallery, R.id.tv_expandable_list_view, R.id.tv_stack_view,
             R.id.tv_grid_Layout_image_view, R.id.tv_bar, R.id.tv_sliding_pane_layout};
     private Class<?>[] classes = {TextClockActivity.class, HorizontalScrollViewActivity.class, ViewSwitcherActivity.class,
-            GalleryActivity.class, ExpandableListViewActivity.class, StackViewActivity.class,
+            ViewFlipperActivity.class, GalleryActivity.class, ExpandableListViewActivity.class, StackViewActivity.class,
             GridLayoutImageViewActivity.class, BarActivity.class, SlidingPaneLayoutActivity.class};
 
     public static MineFragment newInstance() {
