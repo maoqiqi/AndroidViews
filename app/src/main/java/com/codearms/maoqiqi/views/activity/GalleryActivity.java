@@ -15,7 +15,7 @@ import com.codearms.maoqiqi.views.R;
 /**
  * Gallery
  * Author: fengqi.mao.march@gmail.com
- * Date: 2018/8/22 22:06
+ * Date: 2018/9/4 22:22
  */
 public class GalleryActivity extends BaseActivity {
 
@@ -34,11 +34,11 @@ public class GalleryActivity extends BaseActivity {
         gallery.setAdapter(new MyAdapter(this));
     }
 
-    final class MyAdapter extends BaseAdapter {
+    private final class MyAdapter extends BaseAdapter {
 
         private Context context;
 
-        public MyAdapter(Context context) {
+        MyAdapter(Context context) {
             this.context = context;
         }
 

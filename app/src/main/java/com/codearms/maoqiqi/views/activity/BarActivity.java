@@ -19,7 +19,7 @@ public class BarActivity extends BaseActivity {
         setContentView(R.layout.activity_bar);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.progress_bar);
+        toolbar.setTitle(R.string.bar);
         setSupportActionBar(toolbar);
     }
 }
