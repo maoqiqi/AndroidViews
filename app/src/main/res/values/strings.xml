@@ -114,6 +114,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Add simple code for ViewPager.</item>
         <item>Add simple code for ViewFlipper.</item>
         <item>Update MineFragment and Add simple code for StackView.</item>
         <item>Add simple code for ExpandableListView.</item>
@@ -240,4 +241,5 @@
     <string name="province">省</string>
     <string name="city">市</string>
     <string name="district">区</string>
+    <string name="view_pager">ViewPager</string>
 </resources>

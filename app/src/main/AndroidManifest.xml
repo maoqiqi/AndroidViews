@@ -44,6 +44,7 @@
             android:name=".activity.SearchViewActivity"
             android:theme="@style/AppTheme.SearchView" />
         <activity android:name=".activity.TextClockActivity" />
+        <activity android:name=".activity.BarActivity" />
         <activity android:name=".activity.HorizontalScrollViewActivity" />
         <activity android:name=".activity.ViewSwitcherActivity" />
         <activity android:name=".activity.ViewFlipperActivity" />
@@ -51,7 +52,7 @@
         <activity android:name=".activity.ExpandableListViewActivity" />
         <activity android:name=".activity.StackViewActivity" />
         <activity android:name=".activity.GridLayoutImageViewActivity" />
-        <activity android:name=".activity.BarActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
         <activity android:name=".activity.SlidingPaneLayoutActivity" />
     </application>
 
