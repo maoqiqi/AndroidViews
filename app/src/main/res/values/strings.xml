@@ -117,6 +117,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Add simple code for ZoomControls.</item>
         <item>Add simple code for ViewStub.</item>
         <item>Add simple code for AdapterViewFlipper.</item>
         <item>ViewFlipperActivity and ViewSwitcherActivity are merged into ViewAnimatorActivity, and add simple code for ViewAnimator.</item>
@@ -228,6 +229,7 @@
     <string name="text_clock">TextClock</string>
     <string name="bar">ProgressBar…</string>
     <string name="view_stub">ViewStub</string>
+    <string name="zoom_controls">ZoomControls</string>
     <string name="horizontal_scroll_view">HorizontalScrollView</string>
     <string name="view_animator">ViewAnimator</string>
     <string-array name="text_switcher">

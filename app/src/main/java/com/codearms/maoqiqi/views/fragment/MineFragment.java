@@ -25,6 +25,7 @@ import com.codearms.maoqiqi.views.activity.TextClockActivity;
 import com.codearms.maoqiqi.views.activity.ViewPagerActivity;
 import com.codearms.maoqiqi.views.activity.ViewAnimatorActivity;
 import com.codearms.maoqiqi.views.activity.ViewStubActivity;
+import com.codearms.maoqiqi.views.activity.ZoomControlsActivity;
 
 /**
  * MinePage
@@ -35,13 +36,13 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
     private View rootView;
     private int[] ids = {
-            R.id.tv_text_clock, R.id.tv_bar, R.id.tv_view_stub,
+            R.id.tv_text_clock, R.id.tv_bar, R.id.tv_view_stub, R.id.tv_zoom_controls,
             R.id.tv_horizontal_scroll_view, R.id.tv_view_animator, R.id.tv_gallery,
             R.id.tv_expandable_list_view, R.id.tv_adapter_view_animator, R.id.tv_grid_Layout_image_view,
             R.id.tv_sliding_pane_layout, R.id.tv_view_pager
     };
     private Class<?>[] classes = {
-            TextClockActivity.class, BarActivity.class, ViewStubActivity.class,
+            TextClockActivity.class, BarActivity.class, ViewStubActivity.class, ZoomControlsActivity.class,
             HorizontalScrollViewActivity.class, ViewAnimatorActivity.class, GalleryActivity.class,
             ExpandableListViewActivity.class, AdapterViewAnimatorActivity.class, GridLayoutImageViewActivity.class,
             SlidingPaneLayoutActivity.class, ViewPagerActivity.class
