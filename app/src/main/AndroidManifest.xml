@@ -45,6 +45,7 @@
             android:theme="@style/AppTheme.SearchView" />
         <activity android:name=".activity.TextClockActivity" />
         <activity android:name=".activity.BarActivity" />
+        <activity android:name=".activity.ViewStubActivity" />
         <activity android:name=".activity.HorizontalScrollViewActivity" />
         <activity android:name=".activity.ViewAnimatorActivity" />
         <activity android:name=".activity.GalleryActivity" />
