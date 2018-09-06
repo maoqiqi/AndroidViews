@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg"
     android:orientation="vertical"
-    tools:context=".activity.ViewSwitcherActivity">
+    tools:context=".activity.ViewAnimatorActivity">
 
     <include layout="@layout/layout_title" />
 
@@ -26,4 +26,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/sixteen"
         android:background="@color/bg_item_pressed" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen" />
+
+    <ViewAnimator
+        android:id="@+id/view_animator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen" />
 </LinearLayout>

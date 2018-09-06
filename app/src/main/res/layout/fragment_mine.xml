@@ -111,7 +111,7 @@
             android:textSize="@dimen/text_size_normal" />
 
         <TextView
-            android:id="@+id/tv_view_switcher"
+            android:id="@+id/tv_view_animator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_setting_item"
@@ -121,22 +121,7 @@
             android:minHeight="48dp"
             android:paddingEnd="@dimen/twelve"
             android:paddingStart="@dimen/sixteen"
-            android:text="@string/view_switcher"
-            android:textColor="@color/text_color_primary"
-            android:textSize="@dimen/text_size_normal" />
-
-        <TextView
-            android:id="@+id/tv_view_flipper"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_setting_item"
-            android:drawableEnd="@drawable/ic_arrow_right"
-            android:drawableTint="@color/text_color_hint"
-            android:gravity="center_vertical"
-            android:minHeight="48dp"
-            android:paddingEnd="@dimen/twelve"
-            android:paddingStart="@dimen/sixteen"
-            android:text="@string/view_flipper"
+            android:text="@string/view_animator"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
 

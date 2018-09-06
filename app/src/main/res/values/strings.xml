@@ -114,6 +114,7 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>ViewFlipperActivity and ViewSwitcherActivity are merged into ViewAnimatorActivity, and add simple code for ViewAnimator.</item>
         <item>Add simple code for ViewPager.</item>
         <item>Add simple code for ViewFlipper.</item>
         <item>Update MineFragment and Add simple code for StackView.</item>
@@ -221,7 +222,7 @@
     <string name="phone">152******17</string>
     <string name="text_clock">TextClock</string>
     <string name="horizontal_scroll_view">HorizontalScrollView</string>
-    <string name="view_switcher">ViewSwitcher</string>
+    <string name="view_animator">ViewAnimator</string>
     <string-array name="text_switcher">
         <item>网站维护公告</item>
         <item>双11回馈活动产品利率增长0.05%</item>
@@ -229,7 +230,6 @@
         <item>国家大数据发展纲要</item>
     </string-array>
     <string name="hot">最热</string>
-    <string name="view_flipper">ViewFlipper</string>
     <string name="gallery">Gallery</string>
     <string name="expandable_list_view">ExpandableListView</string>
     <string name="stack_view">StackView</string>
