@@ -20,7 +20,7 @@ import com.codearms.maoqiqi.views.activity.GalleryActivity;
 import com.codearms.maoqiqi.views.activity.GridLayoutImageViewActivity;
 import com.codearms.maoqiqi.views.activity.HorizontalScrollViewActivity;
 import com.codearms.maoqiqi.views.activity.SlidingPaneLayoutActivity;
-import com.codearms.maoqiqi.views.activity.StackViewActivity;
+import com.codearms.maoqiqi.views.activity.AdapterViewAnimatorActivity;
 import com.codearms.maoqiqi.views.activity.TextClockActivity;
 import com.codearms.maoqiqi.views.activity.ViewPagerActivity;
 import com.codearms.maoqiqi.views.activity.ViewAnimatorActivity;
@@ -36,13 +36,13 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private int[] ids = {
             R.id.tv_text_clock, R.id.tv_bar, R.id.tv_horizontal_scroll_view,
             R.id.tv_view_animator, R.id.tv_gallery, R.id.tv_expandable_list_view,
-            R.id.tv_stack_view, R.id.tv_grid_Layout_image_view,
+            R.id.tv_adapter_view_animator, R.id.tv_grid_Layout_image_view,
             R.id.tv_sliding_pane_layout, R.id.tv_view_pager
     };
     private Class<?>[] classes = {
             TextClockActivity.class, BarActivity.class, HorizontalScrollViewActivity.class,
             ViewAnimatorActivity.class, GalleryActivity.class, ExpandableListViewActivity.class,
-            StackViewActivity.class, GridLayoutImageViewActivity.class,
+            AdapterViewAnimatorActivity.class, GridLayoutImageViewActivity.class,
             SlidingPaneLayoutActivity.class, ViewPagerActivity.class
     };
 

@@ -156,7 +156,7 @@
             android:textSize="@dimen/text_size_normal" />
 
         <TextView
-            android:id="@+id/tv_stack_view"
+            android:id="@+id/tv_adapter_view_animator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_setting_item"
@@ -166,7 +166,7 @@
             android:minHeight="48dp"
             android:paddingEnd="@dimen/twelve"
             android:paddingStart="@dimen/sixteen"
-            android:text="@string/stack_view"
+            android:text="@string/adapter_view_animator"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
 

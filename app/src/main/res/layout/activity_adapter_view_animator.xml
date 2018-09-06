@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg"
     android:orientation="vertical"
-    tools:context=".activity.StackViewActivity">
+    tools:context=".activity.AdapterViewAnimatorActivity">
 
     <include layout="@layout/layout_title" />
 
@@ -13,4 +13,10 @@
         android:id="@+id/stack_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <AdapterViewFlipper
+        android:id="@+id/adapter_view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:loopViews="true" />
 </LinearLayout>

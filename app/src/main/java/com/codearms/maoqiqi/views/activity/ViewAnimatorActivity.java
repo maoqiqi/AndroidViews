@@ -47,7 +47,7 @@ public class ViewAnimatorActivity extends BaseActivity {
         setContentView(R.layout.activity_view_animator);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.view_switcher);
+        toolbar.setTitle(R.string.view_animator);
         setSupportActionBar(toolbar);
 
         imageSwitcher = findViewById(R.id.image_switcher);
