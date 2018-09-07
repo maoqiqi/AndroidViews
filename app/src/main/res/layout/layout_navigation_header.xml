@@ -48,8 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="@dimen/sixteen"
-        android:layout_marginRight="@dimen/sixteen"
+        android:layout_marginEnd="@dimen/sixteen"
+        android:layout_marginStart="@dimen/sixteen"
         android:layout_marginTop="40dp"
         android:contentDescription="@string/scan_code_description"
         android:src="@drawable/ic_scan_code" />

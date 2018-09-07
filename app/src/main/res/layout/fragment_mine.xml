@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -8,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/color_primary"
@@ -20,44 +21,50 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/sixteen"
-                android:layout_marginLeft="@dimen/sixteen"
-                android:layout_marginRight="@dimen/sixteen"
+                android:layout_marginStart="@dimen/sixteen"
                 android:layout_marginTop="@dimen/eight"
-                android:background="@color/transparent"
                 android:contentDescription="@string/project_description"
-                android:src="@drawable/ic_project" />
+                android:src="@drawable/ic_project"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/eight"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_marginStart="@dimen/sixteen"
+                android:text="@string/nick_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                app:layout_constraintBottom_toTopOf="@id/tv_phone"
+                app:layout_constraintStart_toEndOf="@id/iv_project"
+                app:layout_constraintTop_toTopOf="@id/iv_project"
+                app:layout_constraintVertical_chainStyle="packed" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/nick_name"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/text_size_normal" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/four"
-                    android:text="@string/phone"
-                    android:textColor="@color/text_color_gray"
-                    android:textSize="@dimen/text_size_small" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sixteen"
+                android:layout_marginTop="@dimen/four"
+                android:text="@string/phone"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_small"
+                app:layout_constraintBottom_toBottomOf="@id/iv_project"
+                app:layout_constraintStart_toEndOf="@id/iv_project"
+                app:layout_constraintTop_toBottomOf="@id/tv_nick_name" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/eight"
                 android:layout_marginEnd="@dimen/twelve"
                 android:drawableEnd="@drawable/ic_arrow_right"
-                android:drawableTint="@color/text_color_hint" />
-        </LinearLayout>
+                android:drawableTint="@color/text_color_hint"
+                app:layout_constraintBottom_toBottomOf="@id/iv_project"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_project" />
+        </android.support.constraint.ConstraintLayout>
 
         <View
             android:layout_width="match_parent"

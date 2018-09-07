@@ -9,125 +9,119 @@
 
     <include layout="@layout/layout_title" />
 
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/thirty_two"
+        android:contentDescription="@string/launcher_description"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/current_version"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_smaller" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty_two"
+        android:background="@color/white"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/thirty_two"
-            android:contentDescription="@string/launcher_description"
-            android:src="@mipmap/ic_launcher" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/color_line" />
 
         <TextView
-            android:id="@+id/tv_version_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/current_version"
-            android:textColor="@color/text_color_gray"
-            android:textSize="@dimen/text_size_smaller" />
-
-        <LinearLayout
+            android:id="@+id/tv_function_introduction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/thirty_two"
-            android:background="@color/white"
-            android:orientation="vertical">
+            android:background="@drawable/bg_navigation_item"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingStart="@dimen/sixteen"
+            android:text="@string/function_introduction"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_normal" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_height"
-                android:background="@color/color_line" />
-
-            <TextView
-                android:id="@+id/tv_function_introduction"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_navigation_item"
-                android:gravity="center_vertical"
-                android:minHeight="48dp"
-                android:paddingLeft="@dimen/sixteen"
-                android:paddingRight="@dimen/sixteen"
-                android:text="@string/function_introduction"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_height"
-                android:layout_marginStart="@dimen/sixteen"
-                android:background="@color/color_line" />
-
-            <TextView
-                android:id="@+id/tv_check_update"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_navigation_item"
-                android:gravity="center_vertical"
-                android:minHeight="48dp"
-                android:paddingLeft="@dimen/sixteen"
-                android:paddingRight="@dimen/sixteen"
-                android:text="@string/check_update"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_height"
-                android:layout_marginStart="@dimen/sixteen"
-                android:background="@color/color_line" />
-
-            <TextView
-                android:id="@+id/tv_update_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_navigation_item"
-                android:gravity="center_vertical"
-                android:minHeight="48dp"
-                android:paddingLeft="@dimen/sixteen"
-                android:paddingRight="@dimen/sixteen"
-                android:text="@string/update_description"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_height"
-                android:layout_marginStart="@dimen/sixteen"
-                android:background="@color/color_line" />
-
-            <TextView
-                android:id="@+id/tv_star"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_navigation_item"
-                android:gravity="center_vertical"
-                android:minHeight="48dp"
-                android:paddingLeft="@dimen/sixteen"
-                android:paddingRight="@dimen/sixteen"
-                android:text="@string/give_a_star"
-                android:textColor="@color/text_color_primary"
-                android:textSize="@dimen/text_size_normal" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_height"
-                android:background="@color/color_line" />
-        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginStart="@dimen/sixteen"
+            android:background="@color/color_line" />
 
         <TextView
+            android:id="@+id/tv_check_update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/sixteen"
-            android:gravity="center_horizontal"
-            android:lineSpacingExtra="2dp"
-            android:padding="@dimen/sixteen"
-            android:text="@string/star_content"
-            android:textColor="@color/text_color_gray"
-            android:textSize="@dimen/text_size_small" />
+            android:background="@drawable/bg_navigation_item"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingStart="@dimen/sixteen"
+            android:text="@string/check_update"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginStart="@dimen/sixteen"
+            android:background="@color/color_line" />
+
+        <TextView
+            android:id="@+id/tv_update_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_navigation_item"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingStart="@dimen/sixteen"
+            android:text="@string/update_description"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginStart="@dimen/sixteen"
+            android:background="@color/color_line" />
+
+        <TextView
+            android:id="@+id/tv_star"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_navigation_item"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingStart="@dimen/sixteen"
+            android:text="@string/give_a_star"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/color_line" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="2dp"
+        android:padding="@dimen/sixteen"
+        android:text="@string/star_content"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_small" />
 </LinearLayout>

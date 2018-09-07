@@ -7,7 +7,7 @@
     android:clickable="true"
     android:gravity="center_vertical"
     android:minHeight="48dp"
-    android:paddingLeft="@dimen/sixteen"
-    android:paddingRight="@dimen/sixteen"
+    android:paddingEnd="@dimen/sixteen"
+    android:paddingStart="@dimen/sixteen"
     android:textColor="@color/text_color_primary"
     android:textSize="@dimen/text_size_normal" />

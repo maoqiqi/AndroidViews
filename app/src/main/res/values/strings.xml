@@ -117,6 +117,8 @@
         <item>版本 V1.0.0</item>
     </string-array>
     <string-array name="version_1_0_0_logs">
+        <item>Unify and optimize the layout.</item>
+        <item>Update gradle version.</item>
         <item>Add simple code for SwipeRefreshLayout.</item>
         <item>Add simple code for ZoomControls.</item>
         <item>Add simple code for ViewStub.</item>

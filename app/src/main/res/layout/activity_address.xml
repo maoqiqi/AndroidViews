@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +10,7 @@
 
     <include layout="@layout/layout_title" />
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -19,22 +20,26 @@
             android:id="@+id/np_province"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:solidColor="@color/color_accent" />
+            android:solidColor="@color/color_accent"
+            app:layout_constraintEnd_toStartOf="@id/np_city"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <NumberPicker
             android:id="@+id/np_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/sixteen"
-            android:layout_marginStart="@dimen/sixteen"
-            android:solidColor="@color/color_primary" />
+            android:solidColor="@color/color_primary"
+            app:layout_constraintEnd_toStartOf="@id/np_district"
+            app:layout_constraintStart_toEndOf="@id/np_province" />
 
         <NumberPicker
             android:id="@+id/np_district"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:solidColor="@color/switch_mark_checked" />
-    </LinearLayout>
+            android:solidColor="@color/switch_mark_checked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/np_city" />
+    </android.support.constraint.ConstraintLayout>
 
     <View
         android:layout_width="match_parent"

@@ -147,7 +147,7 @@
             <!--SwitchCompat的app:trackTint="@color/switch_compat_track_tint"-->
             <!--Switch会对颜色进行30%处理,而SwitchCompat显示填的的颜色-->
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/remember_password_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -159,27 +159,29 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:drawablePadding="@dimen/eight"
                     android:drawableStart="@drawable/ic_password"
                     android:drawableTint="@color/text_color_primary"
                     android:text="@string/remember_password"
                     android:textColor="@color/text_color_primary"
-                    android:textSize="@dimen/text_size_normal" />
+                    android:textSize="@dimen/text_size_normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ToggleButton
                     android:id="@+id/toggle_button"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
                     android:background="@drawable/bg_toggle"
                     android:backgroundTint="@color/bg_toggle_tint"
                     android:checked="true"
                     android:clickable="false"
                     android:textOff="@null"
-                    android:textOn="@null" />
-            </RelativeLayout>
+                    android:textOn="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -241,8 +243,8 @@
                 android:layout_marginTop="@dimen/twenty_four"
                 android:background="@color/color_line" />
 
-            <RelativeLayout
-                android:id="@+id/rl_system_animation"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_system_animation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_setting_item"
@@ -254,30 +256,35 @@
                     android:layout_height="wrap_content"
                     android:text="@string/system_animation_title"
                     android:textColor="@color/text_color_primary"
-                    android:textSize="@dimen/text_size_small" />
+                    android:textSize="@dimen/text_size_small"
+                    app:layout_constraintBottom_toTopOf="@id/tv_system_animation_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
 
                 <TextView
                     android:id="@+id/tv_system_animation_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_system_animation_title"
                     android:layout_marginTop="@dimen/four"
                     android:text="@string/system_animation_content"
                     android:textColor="@color/text_color_gray"
-                    android:textSize="@dimen/text_size_smaller" />
+                    android:textSize="@dimen/text_size_smaller"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_system_animation_title" />
 
                 <android.support.v7.widget.SwitchCompat
                     android:id="@+id/sc_system_animation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
                     android:background="@color/transparent"
-                    android:clickable="false" />
-            </RelativeLayout>
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
-            <RelativeLayout
-                android:id="@+id/rl_launcher_page"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_launcher_page"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_setting_item"
@@ -289,30 +296,34 @@
                     android:layout_height="wrap_content"
                     android:text="@string/launcher_page_title"
                     android:textColor="@color/text_color_primary"
-                    android:textSize="@dimen/text_size_small" />
+                    android:textSize="@dimen/text_size_small"
+                    app:layout_constraintBottom_toTopOf="@id/tv_launcher_page_content"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/tv_launcher_page_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_launcher_page_title"
                     android:layout_marginTop="@dimen/four"
                     android:text="@string/launcher_page_content_2"
                     android:textColor="@color/text_color_gray"
-                    android:textSize="@dimen/text_size_smaller" />
+                    android:textSize="@dimen/text_size_smaller"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_launcher_page_title" />
 
                 <android.support.v7.widget.SwitchCompat
                     android:id="@+id/sc_launcher_page"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
                     android:background="@color/transparent"
-                    android:clickable="false" />
-            </RelativeLayout>
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
-            <RelativeLayout
-                android:id="@+id/rl_launcher_page_random"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_launcher_page_random"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_setting_item"
@@ -324,27 +335,32 @@
                     android:layout_height="wrap_content"
                     android:text="@string/launcher_page_random_title"
                     android:textColor="@color/text_color_primary"
-                    android:textSize="@dimen/text_size_small" />
+                    android:textSize="@dimen/text_size_small"
+                    app:layout_constraintBottom_toTopOf="@id/tv_launcher_page_random_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
 
                 <TextView
                     android:id="@+id/tv_launcher_page_random_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_launcher_page_random_title"
                     android:layout_marginTop="@dimen/four"
                     android:text="@string/launcher_page_random_content_2"
                     android:textColor="@color/text_color_gray"
-                    android:textSize="@dimen/text_size_smaller" />
+                    android:textSize="@dimen/text_size_smaller"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_launcher_page_random_title" />
 
                 <android.support.v7.widget.SwitchCompat
                     android:id="@+id/sc_launcher_page_random"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
                     android:background="@color/transparent"
-                    android:clickable="false" />
-            </RelativeLayout>
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

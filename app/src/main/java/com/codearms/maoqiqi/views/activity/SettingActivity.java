@@ -1,12 +1,12 @@
 package com.codearms.maoqiqi.views.activity;
 
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.CheckedTextView;
-import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
@@ -27,18 +27,18 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
     private Switch rememberPassword4;
     private SwitchCompat rememberPassword5;
     private SwitchCompat rememberPassword6;
-    private RelativeLayout rememberPassword7;
+    private ConstraintLayout rememberPassword7;
     private ToggleButton toggleButton;
 
-    private RelativeLayout rlSystemAnimation;
+    private ConstraintLayout clSystemAnimation;
     private TextView tvSystemAnimationTitle;
     private TextView tvSystemAnimationContent;
     private SwitchCompat scSystemAnimation;
-    private RelativeLayout rlLauncherPage;
+    private ConstraintLayout clLauncherPage;
     private TextView tvLauncherPageTitle;
     private TextView tvLauncherPageContent;
     private SwitchCompat scLauncherPage;
-    private RelativeLayout rlLauncherPageRandom;
+    private ConstraintLayout clLauncherPageRandom;
     private TextView tvLauncherPageRandomTitle;
     private TextView tvLauncherPageRandomContent;
     private SwitchCompat scLauncherPageRandom;
@@ -61,15 +61,15 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         rememberPassword7 = findViewById(R.id.remember_password_7);
         toggleButton = findViewById(R.id.toggle_button);
 
-        rlSystemAnimation = findViewById(R.id.rl_system_animation);
+        clSystemAnimation = findViewById(R.id.cl_system_animation);
         tvSystemAnimationTitle = findViewById(R.id.tv_system_animation_title);
         tvSystemAnimationContent = findViewById(R.id.tv_system_animation_content);
         scSystemAnimation = findViewById(R.id.sc_system_animation);
-        rlLauncherPage = findViewById(R.id.rl_launcher_page);
+        clLauncherPage = findViewById(R.id.cl_launcher_page);
         tvLauncherPageTitle = findViewById(R.id.tv_launcher_page_title);
         tvLauncherPageContent = findViewById(R.id.tv_launcher_page_content);
         scLauncherPage = findViewById(R.id.sc_launcher_page);
-        rlLauncherPageRandom = findViewById(R.id.rl_launcher_page_random);
+        clLauncherPageRandom = findViewById(R.id.cl_launcher_page_random);
         tvLauncherPageRandomTitle = findViewById(R.id.tv_launcher_page_random_title);
         tvLauncherPageRandomContent = findViewById(R.id.tv_launcher_page_random_content);
         scLauncherPageRandom = findViewById(R.id.sc_launcher_page_random);
@@ -78,9 +78,9 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         rememberPassword2.setOnClickListener(this);
         rememberPassword7.setOnClickListener(this);
 
-        rlSystemAnimation.setOnClickListener(this);
-        rlLauncherPage.setOnClickListener(this);
-        rlLauncherPageRandom.setOnClickListener(this);
+        clSystemAnimation.setOnClickListener(this);
+        clLauncherPage.setOnClickListener(this);
+        clLauncherPageRandom.setOnClickListener(this);
 
         scSystemAnimation.setChecked(true);
         scLauncherPage.setChecked(true);
@@ -101,14 +101,14 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
             case R.id.remember_password_7:
                 toggleButton.toggle();
                 break;
-            case R.id.rl_system_animation:
+            case R.id.cl_system_animation:
                 scSystemAnimation.toggle();
                 break;
-            case R.id.rl_launcher_page:
+            case R.id.cl_launcher_page:
                 scLauncherPage.toggle();
                 setLauncherPageRandomEnable();
                 break;
-            case R.id.rl_launcher_page_random:
+            case R.id.cl_launcher_page_random:
                 scLauncherPageRandom.toggle();
                 setLauncherPageRandomContent();
                 break;
@@ -118,11 +118,11 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
     private void setLauncherPageRandomEnable() {
         if (scLauncherPage.isChecked()) {
             tvLauncherPageContent.setText(R.string.launcher_page_content_1);
-            rlLauncherPageRandom.setClickable(true);
+            clLauncherPageRandom.setClickable(true);
             tvLauncherPageRandomTitle.setTextColor(ContextCompat.getColor(this, R.color.text_color_primary));
         } else {
             tvLauncherPageContent.setText(R.string.launcher_page_content_2);
-            rlLauncherPageRandom.setClickable(false);
+            clLauncherPageRandom.setClickable(false);
             tvLauncherPageRandomTitle.setTextColor(ContextCompat.getColor(this, R.color.text_color_gray));
         }
     }
