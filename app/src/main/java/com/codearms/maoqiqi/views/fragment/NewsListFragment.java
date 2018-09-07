@@ -1,9 +1,13 @@
 package com.codearms.maoqiqi.views.fragment;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,6 +25,7 @@ import com.codearms.maoqiqi.views.bean.NewsListBean;
 import com.codearms.maoqiqi.views.utils.AssetsUtils;
 import com.google.gson.Gson;
 
+import java.lang.ref.WeakReference;
 import java.util.List;
 
 /**
@@ -30,8 +35,14 @@ import java.util.List;
  */
 public class NewsListFragment extends LazyLoadFragment {
 
+    private static final int WHAT = 0;
+    private static final int DELAY_MILLIS = 3000;
+
     private View rootView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private RecyclerView recyclerView;
+
+    private MyHandler handler = new MyHandler(this);
 
     /**
      * Use this factory method to create a new instance of this fragment using the provided parameters.
@@ -58,17 +69,49 @@ public class NewsListFragment extends LazyLoadFragment {
     @Override
     public void loadData() {
         super.loadData();
+        swipeRefreshLayout = rootView.findViewById(R.id.swipe_refresh_layout);
         recyclerView = rootView.findViewById(R.id.recycler_view);
 
         if (getActivity() == null) return;
         String json = AssetsUtils.getJson(getActivity(), "news.json");
         NewsListBean newsListBean = new Gson().fromJson(json, NewsListBean.class);
 
+
+        swipeRefreshLayout.setColorSchemeColors(Color.GRAY, Color.RED, Color.GREEN, Color.BLUE);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                handler.sendEmptyMessageDelayed(WHAT, DELAY_MILLIS);
+            }
+        });
+
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setHasFixedSize(false);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setAdapter(new RecyclerViewAdapter(getActivity(), newsListBean.getNewsBeans()));
+    }
+
+    private static final class MyHandler extends Handler {
+
+        private WeakReference<NewsListFragment> weakReference;
+
+        MyHandler(NewsListFragment fragment) {
+            this.weakReference = new WeakReference<>(fragment);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case WHAT:
+                    if (weakReference.get() != null) {
+                        NewsListFragment fragment = weakReference.get();
+                        fragment.swipeRefreshLayout.setRefreshing(false);
+                    }
+                    break;
+            }
+        }
     }
 
     private final class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
