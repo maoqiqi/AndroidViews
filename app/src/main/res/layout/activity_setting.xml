@@ -38,8 +38,7 @@
                 android:drawableTint="@color/text_color_primary"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
-                android:paddingEnd="@dimen/twelve"
-                android:paddingStart="@dimen/twelve"
+                android:paddingHorizontal="@dimen/twelve"
                 android:text="@string/remember_password"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/text_size_normal" />
@@ -57,8 +56,7 @@
                 android:drawableTint="@color/text_color_primary"
                 android:gravity="center_vertical"
                 android:minHeight="48dp"
-                android:paddingEnd="@dimen/twelve"
-                android:paddingStart="@dimen/twelve"
+                android:paddingHorizontal="@dimen/twelve"
                 android:text="@string/remember_password"
                 android:textColor="@color/text_color_primary"
                 android:textSize="@dimen/text_size_normal" />
@@ -153,8 +151,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_setting_item"
                 android:minHeight="48dp"
-                android:paddingEnd="@dimen/twelve"
-                android:paddingStart="@dimen/twelve">
+                android:paddingHorizontal="@dimen/twelve">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -288,7 +285,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_setting_item"
-                android:padding="16dp">
+                android:padding="@dimen/sixteen">
 
                 <TextView
                     android:id="@+id/tv_launcher_page_title"
@@ -327,7 +324,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_setting_item"
-                android:padding="16dp">
+                android:padding="@dimen/sixteen">
 
                 <TextView
                     android:id="@+id/tv_launcher_page_random_title"

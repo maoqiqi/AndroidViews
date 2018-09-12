@@ -34,10 +34,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/eight"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
-            android:paddingTop="@dimen/eight"
+            android:paddingHorizontal="@dimen/sixteen"
+            android:paddingVertical="@dimen/eight"
             android:text="@string/issues"
             android:textColor="@color/text_color_gray"
             android:textSize="@dimen/text_size_small" />
@@ -49,8 +47,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/app_name"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
@@ -68,8 +65,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/faq_name"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
@@ -95,10 +91,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/eight"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
-            android:paddingTop="@dimen/eight"
+            android:paddingHorizontal="@dimen/sixteen"
+            android:paddingVertical="@dimen/eight"
             android:text="@string/contact_me"
             android:textColor="@color/text_color_gray"
             android:textSize="@dimen/text_size_small" />
@@ -110,8 +104,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/qq"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
@@ -129,8 +122,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/email"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />

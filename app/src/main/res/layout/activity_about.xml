@@ -45,8 +45,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/function_introduction"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
@@ -64,8 +63,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/check_update"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
@@ -83,8 +81,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/update_description"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
@@ -102,8 +99,7 @@
             android:background="@drawable/bg_navigation_item"
             android:gravity="center_vertical"
             android:minHeight="48dp"
-            android:paddingEnd="@dimen/sixteen"
-            android:paddingStart="@dimen/sixteen"
+            android:paddingHorizontal="@dimen/sixteen"
             android:text="@string/give_a_star"
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />

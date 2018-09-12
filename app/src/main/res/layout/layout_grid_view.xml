@@ -5,7 +5,6 @@
     android:horizontalSpacing="@dimen/sixteen"
     android:listSelector="@color/transparent"
     android:numColumns="5"
-    android:paddingEnd="@dimen/sixteen"
-    android:paddingStart="@dimen/sixteen"
+    android:paddingHorizontal="@dimen/sixteen"
     android:paddingTop="@dimen/sixteen"
     android:verticalSpacing="@dimen/sixteen" />

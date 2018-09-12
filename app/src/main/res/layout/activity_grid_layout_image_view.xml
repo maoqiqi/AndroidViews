@@ -16,10 +16,8 @@
         android:background="@color/bg_item_pressed"
         android:gravity="center_vertical"
         android:minHeight="48dp"
-        android:paddingBottom="@dimen/eight"
-        android:paddingEnd="@dimen/eight"
-        android:paddingStart="@dimen/twelve"
-        android:paddingTop="@dimen/eight"
+        android:paddingHorizontal="@dimen/twelve"
+        android:paddingVertical="@dimen/eight"
         android:text="@string/grid_layout_1"
         android:textColor="@color/text_color_gray"
         android:textSize="@dimen/text_size_small" />
@@ -131,10 +129,8 @@
         android:background="@color/bg_item_pressed"
         android:gravity="center_vertical"
         android:minHeight="48dp"
-        android:paddingBottom="@dimen/eight"
-        android:paddingEnd="@dimen/eight"
-        android:paddingStart="@dimen/twelve"
-        android:paddingTop="@dimen/eight"
+        android:paddingHorizontal="@dimen/twelve"
+        android:paddingVertical="@dimen/eight"
         android:text="@string/grid_layout_2"
         android:textColor="@color/text_color_gray"
         android:textSize="@dimen/text_size_small" />
@@ -145,6 +141,7 @@
         android:stretchColumns="0,1,2,3">
 
         <TableRow>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
@@ -183,6 +180,7 @@
         </TableRow>
 
         <TableRow>
+
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"

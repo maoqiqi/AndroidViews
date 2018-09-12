@@ -3,4 +3,5 @@
 /build
 *.iml
 local.properties
+sign/keystore.properties
 .DS_Store

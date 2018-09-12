@@ -54,8 +54,7 @@
         android:gravity="center_vertical"
         android:minHeight="48dp"
         android:orientation="horizontal"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen">
+        android:paddingHorizontal="@dimen/sixteen">
 
         <TextView
             android:layout_width="0dp"
@@ -81,8 +80,7 @@
         android:gravity="center_vertical"
         android:minHeight="48dp"
         android:orientation="horizontal"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen">
+        android:paddingHorizontal="@dimen/sixteen">
 
         <TextView
             android:layout_width="0dp"
@@ -109,8 +107,7 @@
         android:gravity="center_vertical"
         android:minHeight="48dp"
         android:orientation="horizontal"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen">
+        android:paddingHorizontal="@dimen/sixteen">
 
         <TextView
             android:layout_width="0dp"
