@@ -23,7 +23,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:dateTextAppearance="@style/calendar_view_date"
-
                 android:weekDayTextAppearance="@style/calendar_view_week_day" />
 
             <DatePicker

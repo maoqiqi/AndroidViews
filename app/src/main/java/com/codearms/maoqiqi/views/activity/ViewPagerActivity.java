@@ -90,7 +90,7 @@ public class ViewPagerActivity extends BaseActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             SpannableStringBuilder ssb = new SpannableStringBuilder("  " + position);
-            Drawable drawable = getDrawable(R.drawable.ic_email);
+            Drawable drawable = getDrawable(R.drawable.ic_email_normal);
             if (drawable != null) {
                 drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
             }

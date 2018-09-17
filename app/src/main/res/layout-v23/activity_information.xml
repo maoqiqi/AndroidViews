@@ -120,6 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/sixteen"
                     android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
                     android:text="@string/birthday"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/text_size_normal" />
@@ -155,6 +156,7 @@
                         android:id="@+id/rb_male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:buttonTint="@color/button_tint"
                         android:checked="true"
                         android:text="@string/male"
                         android:textColor="@drawable/text_color_button"
@@ -165,6 +167,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/sixteen"
+                        android:buttonTint="@color/button_tint"
                         android:text="@string/female"
                         android:textColor="@drawable/text_color_button"
                         android:textSize="@dimen/text_size_normal" />
@@ -194,6 +197,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/sixteen"
                     android:layout_marginStart="@dimen/sixteen"
+                    android:buttonTint="@color/button_tint"
                     android:checked="true"
                     android:text="@string/qin"
                     android:textColor="@drawable/text_color_button"
@@ -204,6 +208,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/sixteen"
+                    android:buttonTint="@color/button_tint"
                     android:checked="true"
                     android:text="@string/qi"
                     android:textColor="@drawable/text_color_button"
@@ -279,6 +284,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/sixteen"
                     android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
                     android:text="@string/occupational_android"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/text_size_normal" />
@@ -307,6 +313,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/sixteen"
                     android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
                     android:text="@string/school"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/text_size_normal" />
@@ -335,6 +342,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/sixteen"
                     android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
                     android:text="@string/specialty"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/text_size_normal" />
@@ -363,6 +371,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/sixteen"
                     android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
                     android:text="@string/address"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/text_size_normal" />
@@ -391,6 +400,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/sixteen"
                     android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawableTint="@color/text_color_hint"
                     android:text="@string/home_page"
                     android:textColor="@color/text_color_primary"
                     android:textSize="@dimen/text_size_normal" />
@@ -402,7 +412,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/sixteen"
-                android:background="@drawable/bg_btn"
+                android:background="@drawable/bg_btn_normal"
+                android:backgroundTint="@color/bg_btn_tint"
                 android:minHeight="40dp"
                 android:text="@string/finish"
                 android:textColor="@color/text_color_btn"
