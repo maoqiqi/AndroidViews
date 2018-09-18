@@ -11,8 +11,7 @@
         android:background="@color/bg_item_pressed"
         android:gravity="center_vertical"
         android:minHeight="48dp"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen"
+        android:paddingHorizontal="@dimen/sixteen"
         android:textColor="@color/text_color_gray"
         android:textSize="@dimen/text_size_normal"
         android:textStyle="bold" />
@@ -33,8 +32,7 @@
         android:lineSpacingExtra="@dimen/four"
         android:maxLines="2"
         android:minHeight="48dp"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen"
+        android:paddingHorizontal="@dimen/sixteen"
         android:textColor="@color/text_color_primary"
         android:textSize="@dimen/text_size_small" />
 </LinearLayout>

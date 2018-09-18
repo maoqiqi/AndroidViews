@@ -26,8 +26,7 @@
             android:id="@+id/iv_news_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/sixteen"
-            android:layout_marginStart="@dimen/sixteen"
+            android:layout_marginHorizontal="@dimen/sixteen"
             android:contentDescription="@string/category_description"
             android:src="@drawable/ic_news_category" />
     </LinearLayout>

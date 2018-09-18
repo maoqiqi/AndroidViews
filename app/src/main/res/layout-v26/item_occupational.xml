@@ -3,9 +3,10 @@
     android:id="@+id/tv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/bg_navigation_item"
+    android:clickable="true"
     android:gravity="center_vertical"
     android:minHeight="48dp"
-    android:paddingEnd="@dimen/sixteen"
-    android:paddingStart="@dimen/sixteen"
+    android:paddingHorizontal="@dimen/sixteen"
     android:textColor="@color/text_color_primary"
     android:textSize="@dimen/text_size_normal" />
