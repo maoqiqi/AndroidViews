@@ -28,7 +28,7 @@
         android:textSize="@dimen/text_size_small"
         android:visibility="gone" />
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_gravity="bottom"
@@ -82,5 +82,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/line"
             app:layout_constraintTop_toBottomOf="@id/tv_description_1" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

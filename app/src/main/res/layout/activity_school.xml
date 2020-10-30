@@ -43,7 +43,7 @@
         <!--android:completionThreshold="1":设置触发补全提示信息的字符个数-->
         <!--android:dropDownVerticalOffset="1dp":设置下拉菜单于文本框之间的垂直偏移量-->
 
-        <android.support.v7.widget.AppCompatAutoCompleteTextView
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
             android:id="@+id/app_compat_act_school"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
             android:textSelectHandleRight="@drawable/text_select_handle_right"
             android:textSize="@dimen/text_size_normal" />
 
-        <android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
             android:id="@+id/app_compat_multi_act_specialty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

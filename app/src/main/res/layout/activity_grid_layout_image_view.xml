@@ -72,7 +72,7 @@
             android:scaleType="centerInside"
             app:srcCompat="@drawable/ic_home_entertainment" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_column="0"
@@ -82,7 +82,7 @@
             android:scaleType="centerInside"
             android:src="@drawable/ic_home_food" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_column="1"
@@ -94,7 +94,7 @@
             android:scaleType="centerInside"
             app:srcCompat="@drawable/ic_home_movie" />
 
-        <android.support.v7.widget.AppCompatImageButton
+        <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_column="2"
@@ -105,7 +105,7 @@
             android:scaleType="centerInside"
             android:src="@drawable/ic_home_hotel" />
 
-        <android.support.v7.widget.AppCompatImageButton
+        <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_column="3"
@@ -117,7 +117,7 @@
             app:srcCompat="@drawable/ic_home_entertainment" />
     </GridLayout>
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bg_item_pressed"
@@ -177,7 +177,7 @@
 
         <TableRow>
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"
@@ -185,7 +185,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_home_food" />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"
@@ -195,7 +195,7 @@
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/ic_home_movie" />
 
-            <android.support.v7.widget.AppCompatImageButton
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"
@@ -204,7 +204,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_home_hotel" />
 
-            <android.support.v7.widget.AppCompatImageButton
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"

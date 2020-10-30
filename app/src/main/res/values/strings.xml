@@ -171,7 +171,7 @@
         <item>Subcontracting management for all Activity.</item>
         <item>Use StatusBarView to adapt the status bar.</item>
         <item>Add Banner to HomeFragment.</item>
-        <item>Set the color of ActionBarDrawerToggle's DrawerArrowDrawable and modify height of status bar.</item>
+        <item>Set the color of ActionBarDrawerToggle\'s DrawerArrowDrawable and modify height of status bar.</item>
         <item>Complete MainActivity.</item>
         <item>In InformationActivity, occupational information is added.</item>
         <item>Complete InformationActivity.</item>

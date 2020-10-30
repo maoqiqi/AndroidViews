@@ -1,9 +1,9 @@
 package com.codearms.maoqiqi.views.activity;
 
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatAutoCompleteTextView;
-import android.support.v7.widget.AppCompatMultiAutoCompleteTextView;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
+import androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.MultiAutoCompleteTextView;

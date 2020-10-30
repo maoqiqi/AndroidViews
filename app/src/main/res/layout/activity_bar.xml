@@ -82,7 +82,7 @@
                 android:progress="10"
                 android:secondaryProgress="30" />
 
-            <android.support.v4.widget.ContentLoadingProgressBar
+            <androidx.core.widget.ContentLoadingProgressBar
                 android:id="@+id/progress_bar_7"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
@@ -136,7 +136,7 @@
                 android:rating="2"
                 android:stepSize="1" />
 
-            <android.support.v7.widget.AppCompatRatingBar
+            <androidx.appcompat.widget.AppCompatRatingBar
                 android:id="@+id/rating_bar_5"
                 style="@style/Widget.AppCompat.RatingBar.Small"
                 android:layout_width="wrap_content"
@@ -225,7 +225,7 @@
                 android:progress="3"
                 android:secondaryProgress="6" />
 
-            <android.support.v7.widget.AppCompatSeekBar
+            <androidx.appcompat.widget.AppCompatSeekBar
                 android:id="@+id/seek_bar_9"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="match_parent"

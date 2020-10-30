@@ -10,7 +10,7 @@
 
     <include layout="@layout/layout_title" />
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:solidColor="@color/color_accent"
             app:layout_constraintEnd_toStartOf="@id/np_city"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <NumberPicker
             android:id="@+id/np_city"
@@ -30,7 +31,8 @@
             android:layout_height="wrap_content"
             android:solidColor="@color/color_primary"
             app:layout_constraintEnd_toStartOf="@id/np_district"
-            app:layout_constraintStart_toEndOf="@id/np_province" />
+            app:layout_constraintStart_toEndOf="@id/np_province"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <NumberPicker
             android:id="@+id/np_district"
@@ -38,8 +40,9 @@
             android:layout_height="wrap_content"
             android:solidColor="@color/switch_mark_checked"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/np_city" />
-    </android.support.constraint.ConstraintLayout>
+            app:layout_constraintStart_toEndOf="@id/np_city"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
         android:layout_width="match_parent"
@@ -54,8 +57,8 @@
         android:gravity="center_vertical"
         android:minHeight="48dp"
         android:orientation="horizontal"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen">
+        android:paddingStart="@dimen/sixteen"
+        android:paddingEnd="@dimen/sixteen">
 
         <TextView
             android:layout_width="0dp"
@@ -81,8 +84,8 @@
         android:gravity="center_vertical"
         android:minHeight="48dp"
         android:orientation="horizontal"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen">
+        android:paddingStart="@dimen/sixteen"
+        android:paddingEnd="@dimen/sixteen">
 
         <TextView
             android:layout_width="0dp"
@@ -109,8 +112,8 @@
         android:gravity="center_vertical"
         android:minHeight="48dp"
         android:orientation="horizontal"
-        android:paddingEnd="@dimen/sixteen"
-        android:paddingStart="@dimen/sixteen">
+        android:paddingStart="@dimen/sixteen"
+        android:paddingEnd="@dimen/sixteen">
 
         <TextView
             android:layout_width="0dp"
@@ -120,7 +123,7 @@
             android:textColor="@color/text_color_primary"
             android:textSize="@dimen/text_size_normal" />
 
-        <android.support.v7.widget.AppCompatSpinner
+        <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spinner_district"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
